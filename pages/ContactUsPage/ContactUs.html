@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz Ecke | Contact</title>
+    <link rel="shortcut icon" href="../../images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="ContactUs.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo-link" href="../HomePage/Home.html" aria-label="Hertz Ecke home">
+                <img src="../../images/logo.jpg" alt="Hertz Ecke logo" class="logo">
+                <span class="brand-name">Hertz Ecke</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../HomePage/Home.html" data-i18n="navHome">Home</a></li>
+                <li><a href="../MenuPage/Menu.html" data-i18n="navMenu">Menu</a></li>
+                <li><a href="../EventsPage/Events.html" data-i18n="navEvents">Evenementen</a></li>
+                <li><a href="ContactUs.html" class="active" data-i18n="navContact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a class="instagram-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.75 2.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 12 14.75 2.75 2.75 0 0 0 12 9.25Z"/>
+                    </svg>
+                </a>
+
+                <select id="languageSelect" class="language-select" aria-label="Choose language">
+                    <option value="nl">Dutch</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="contact-hero-overlay"></div>
+            <div class="contact-hero-content">
+                <p class="eyebrow" data-i18n="contactEyebrow">Contact Hertz Ecke</p>
+                <h1 data-i18n="contactHeroTitle">Kom langs of neem contact op</h1>
+                <p data-i18n="contactHeroText">Vind onze openingstijden, telefoonnummer, adres en Google Maps-locatie.</p>
+                <a href="#contactInfo" class="primary-button" data-i18n="contactHeroButton">Bekijk contactgegevens</a>
+            </div>
+        </section>
+
+        <section id="contactInfo" class="contact-grid" aria-label="Contact information">
+            <article class="contact-card hours-card">
+                <p class="section-label" data-i18n="hoursLabel">Openingstijden</p>
+                <h2 data-i18n="hoursTitle">Wanneer zijn we open?</h2>
+                <ul class="hours-list">
+                    <li><span data-i18n="hoursMonThu">Maandag - donderdag</span><strong>18:00 - 01:00</strong></li>
+                    <li><span data-i18n="hoursFriSat">Vrijdag - zaterdag</span><strong>18:00 - 03:00</strong></li>
+                    <li><span data-i18n="hoursSunday">Zondag</span><strong data-i18n="closed">Gesloten</strong></li>
+                </ul>
+            </article>
+
+            <article class="contact-card">
+                <p class="section-label" data-i18n="phoneLabel">Telefoon</p>
+                <h2 data-i18n="phoneTitle">Bel ons</h2>
+                <p data-i18n="phoneText">Voor vragen over reserveringen, evenementen of privéfeesten kun je ons bellen.</p>
+                <a class="contact-link" href="tel:+31000000000">+31 00 000 0000</a>
+            </article>
+
+            <article class="contact-card">
+                <p class="section-label" data-i18n="addressLabel">Adres</p>
+                <h2 data-i18n="addressTitle">Onze locatie</h2>
+                <p class="address-text" data-i18n="addressValue">Jouw baradres hier</p>
+                <a class="contact-link" href="https://www.google.com/maps/search/?api=1&query=Hertz%20Ecke" target="_blank" rel="noopener noreferrer" data-i18n="openMaps">Open in Google Maps</a>
+            </article>
+        </section>
+
+        <section class="map-section" aria-label="Google Maps location">
+            <div class="map-copy">
+                <p class="section-label" data-i18n="mapLabel">Google Maps</p>
+                <h2 data-i18n="mapTitle">Vind ons op de kaart</h2>
+                <p data-i18n="mapText">Vervang later de zoektekst in de Google Maps-link door het echte adres van de bar.</p>
+            </div>
+            <div class="map-frame">
+                <iframe title="Hertz Ecke Google Maps location" src="https://www.google.com/maps?q=Hertz%20Ecke&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h3 data-i18n="footerHoursTitle">Openingstijden</h3>
+            <p data-i18n="footerHoursWeek">Maandag - donderdag: 18:00 - 01:00</p>
+            <p data-i18n="footerHoursWeekend">Vrijdag - zaterdag: 18:00 - 03:00</p>
+            <p data-i18n="footerHoursSunday">Zondag: Gesloten</p>
+        </div>
+
+        <div class="footer-column">
+            <h3 data-i18n="footerContactTitle">Contact</h3>
+            <p><span data-i18n="footerPhone">Telefoon:</span> <a href="tel:+31000000000">+31 00 000 0000</a></p>
+            <p><span data-i18n="footerAddress">Adres:</span> <span data-i18n="footerAddressValue">Jouw baradres hier</span></p>
+        </div>
+
+        <div class="footer-column">
+            <h3 data-i18n="footerLinksTitle">Links</h3>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#" data-i18n="footerWebsite">Toekomstige website</a>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            nl: {
+                navHome: 'Home', navMenu: 'Menu', navEvents: 'Evenementen', navContact: 'Contact',
+                contactEyebrow: 'Contact Hertz Ecke', contactHeroTitle: 'Kom langs of neem contact op', contactHeroText: 'Vind onze openingstijden, telefoonnummer, adres en Google Maps-locatie.', contactHeroButton: 'Bekijk contactgegevens',
+                hoursLabel: 'Openingstijden', hoursTitle: 'Wanneer zijn we open?', hoursMonThu: 'Maandag - donderdag', hoursFriSat: 'Vrijdag - zaterdag', hoursSunday: 'Zondag', closed: 'Gesloten',
+                phoneLabel: 'Telefoon', phoneTitle: 'Bel ons', phoneText: 'Voor vragen over reserveringen, evenementen of privéfeesten kun je ons bellen.',
+                addressLabel: 'Adres', addressTitle: 'Onze locatie', addressValue: 'Jouw baradres hier', openMaps: 'Open in Google Maps',
+                mapLabel: 'Google Maps', mapTitle: 'Vind ons op de kaart', mapText: 'Vervang later de zoektekst in de Google Maps-link door het echte adres van de bar.',
+                footerHoursTitle: 'Openingstijden', footerHoursWeek: 'Maandag - donderdag: 18:00 - 01:00', footerHoursWeekend: 'Vrijdag - zaterdag: 18:00 - 03:00', footerHoursSunday: 'Zondag: Gesloten', footerContactTitle: 'Contact', footerPhone: 'Telefoon:', footerAddress: 'Adres:', footerAddressValue: 'Jouw baradres hier', footerLinksTitle: 'Links', footerWebsite: 'Toekomstige website'
+            },
+            en: {
+                navHome: 'Home', navMenu: 'Menu', navEvents: 'Events', navContact: 'Contact us',
+                contactEyebrow: 'Contact Hertz Ecke', contactHeroTitle: 'Visit us or get in touch', contactHeroText: 'Find our working hours, phone number, address and Google Maps location.', contactHeroButton: 'View contact details',
+                hoursLabel: 'Working hours', hoursTitle: 'When are we open?', hoursMonThu: 'Monday - Thursday', hoursFriSat: 'Friday - Saturday', hoursSunday: 'Sunday', closed: 'Closed',
+                phoneLabel: 'Phone', phoneTitle: 'Call us', phoneText: 'For questions about reservations, events or private parties, you can call us.',
+                addressLabel: 'Address', addressTitle: 'Our location', addressValue: 'Your bar address here', openMaps: 'Open in Google Maps',
+                mapLabel: 'Google Maps', mapTitle: 'Find us on the map', mapText: 'Later, replace the search text in the Google Maps link with the real address of the bar.',
+                footerHoursTitle: 'Working hours', footerHoursWeek: 'Monday - Thursday: 18:00 - 01:00', footerHoursWeekend: 'Friday - Saturday: 18:00 - 03:00', footerHoursSunday: 'Sunday: Closed', footerContactTitle: 'Contact', footerPhone: 'Phone:', footerAddress: 'Address:', footerAddressValue: 'Your bar address here', footerLinksTitle: 'Links', footerWebsite: 'Future website'
+            }
+        };
+
+        const languageSelect = document.getElementById('languageSelect');
+        const translatableElements = document.querySelectorAll('[data-i18n]');
+
+        function setLanguage(language) {
+            translatableElements.forEach((element) => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[language][key]) element.textContent = translations[language][key];
+            });
+            document.documentElement.lang = language;
+            localStorage.setItem('hertzEckeLanguage', language);
+        }
+
+        languageSelect.addEventListener('change', (event) => setLanguage(event.target.value));
+
+        const savedLanguage = localStorage.getItem('hertzEckeLanguage') || 'nl';
+        languageSelect.value = savedLanguage;
+        setLanguage(savedLanguage);
+    </script>
+</body>
+</html>
