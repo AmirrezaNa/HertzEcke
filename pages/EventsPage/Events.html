@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hertz Ecke | Evenementen</title>
+    <title>Hertz Ecke | Veranstaltungen</title>
     <link rel="shortcut icon" href="../../images/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="Events.css">
 </head>
+
 <body>
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
@@ -23,14 +25,16 @@
             </ul>
 
             <div class="nav-actions">
-                <a class="instagram-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <a class="instagram-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.75 2.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 12 14.75 2.75 2.75 0 0 0 12 9.25Z"/>
+                        <path
+                            d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.75 2.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 12 14.75 2.75 2.75 0 0 0 12 9.25Z" />
                     </svg>
                 </a>
 
                 <select id="languageSelect" class="language-select" aria-label="Choose language">
-                    <option value="nl">Dutch</option>
+                    <option value="de">Deutsch</option>
                     <option value="en">English</option>
                 </select>
             </div>
@@ -43,7 +47,8 @@
             <div class="events-hero-content">
                 <p class="eyebrow" data-i18n="eventsEyebrow">Evenementen bij Hertz Ecke</p>
                 <h1 data-i18n="eventsHeroTitle">Voetbal, DJ-avonden en speciale nachten</h1>
-                <p data-i18n="eventsHeroText">Bekijk wat er op de planning staat en kom langs voor een avond met drankjes, muziek en goede sfeer.</p>
+                <p data-i18n="eventsHeroText">Bekijk wat er op de planning staat en kom langs voor een avond met
+                    drankjes, muziek en goede sfeer.</p>
                 <a href="#eventsList" class="primary-button" data-i18n="eventsHeroButton">Bekijk evenementen</a>
             </div>
         </section>
@@ -53,14 +58,17 @@
                 <p class="section-label" data-i18n="introLabel">Wat gebeurt er?</p>
                 <h2 data-i18n="introTitle">Een baravond hoeft niet gewoon te zijn.</h2>
             </div>
-            <p data-i18n="introText">Gebruik deze pagina voor voetbalwedstrijden, DJ-nights, live muziek, privéfeesten of tijdelijke acties. De eigenaar kan de kaarten later makkelijk aanpassen in de HTML.</p>
+            <p data-i18n="introText">Gebruik deze pagina voor voetbalwedstrijden, DJ-nights, live muziek, privéfeesten
+                of tijdelijke acties. De eigenaar kan de kaarten later makkelijk aanpassen in de HTML.</p>
         </section>
 
         <section class="event-control" aria-label="Event category controls">
             <button class="event-filter active" type="button" data-filter="all" data-i18n="filterAll">Alles</button>
-            <button class="event-filter" type="button" data-filter="football" data-i18n="filterFootball">Voetbal</button>
+            <button class="event-filter" type="button" data-filter="football"
+                data-i18n="filterFootball">Voetbal</button>
             <button class="event-filter" type="button" data-filter="music" data-i18n="filterMusic">Muziek & DJ</button>
-            <button class="event-filter" type="button" data-filter="private" data-i18n="filterPrivate">Privé events</button>
+            <button class="event-filter" type="button" data-filter="private" data-i18n="filterPrivate">Privé
+                events</button>
         </section>
 
         <section id="eventsList" class="events-grid" aria-label="Upcoming events">
@@ -72,8 +80,10 @@
                 <div class="event-content">
                     <p class="event-type" data-i18n="footballType">Voetbal live</p>
                     <h2 data-i18n="footballTitle">Live voetbal op groot scherm</h2>
-                    <p data-i18n="footballText">Kom langs voor grote wedstrijden, koude drankjes en een volle bar-sfeer. Perfect voor Champions League, EK/WK en belangrijke clubwedstrijden.</p>
-                    <a href="../ContactUsPage/ContactUs.html" class="secondary-button" data-i18n="footballButton">Vraag naar de volgende match</a>
+                    <p data-i18n="footballText">Kom langs voor grote wedstrijden, koude drankjes en een volle bar-sfeer.
+                        Perfect voor Champions League, EK/WK en belangrijke clubwedstrijden.</p>
+                    <a href="../ContactUsPage/ContactUs.html" class="secondary-button" data-i18n="footballButton">Vraag
+                        naar de volgende match</a>
                 </div>
             </article>
 
@@ -85,7 +95,8 @@
                 <div class="event-content">
                     <p class="event-type" data-i18n="djType">Muziek</p>
                     <h2 data-i18n="djTitle">DJ Night</h2>
-                    <p data-i18n="djText">Een energieke avond met cocktails, neonlicht en muziek. De exacte datum en DJ-naam kunnen later door de eigenaar worden ingevuld.</p>
+                    <p data-i18n="djText">Een energieke avond met cocktails, neonlicht en muziek. De exacte datum en
+                        DJ-naam kunnen later door de eigenaar worden ingevuld.</p>
                 </div>
             </article>
 
@@ -97,7 +108,8 @@
                 <div class="event-content">
                     <p class="event-type" data-i18n="liveType">Speciale avond</p>
                     <h2 data-i18n="liveTitle">Live muziek & cocktails</h2>
-                    <p data-i18n="liveText">Een ontspannen avond voor gasten die willen genieten van muziek, gesprekken en signature drinks.</p>
+                    <p data-i18n="liveText">Een ontspannen avond voor gasten die willen genieten van muziek, gesprekken
+                        en signature drinks.</p>
                 </div>
             </article>
 
@@ -109,8 +121,10 @@
                 <div class="event-content">
                     <p class="event-type" data-i18n="privateType">Privé event</p>
                     <h2 data-i18n="privateTitle">Verjaardagen en privéfeesten</h2>
-                    <p data-i18n="privateText">Plan je eigen avond bij Hertz Ecke. Neem contact op voor beschikbaarheid, drankopties en groepsafspraken.</p>
-                    <a href="../ContactUsPage/ContactUs.html" class="secondary-button" data-i18n="privateButton">Neem contact op</a>
+                    <p data-i18n="privateText">Plan je eigen avond bij Hertz Ecke. Neem contact op voor beschikbaarheid,
+                        drankopties en groepsafspraken.</p>
+                    <a href="../ContactUsPage/ContactUs.html" class="secondary-button" data-i18n="privateButton">Neem
+                        contact op</a>
                 </div>
             </article>
         </section>
@@ -127,7 +141,8 @@
         <div class="footer-column">
             <h3 data-i18n="footerContactTitle">Contact</h3>
             <p><span data-i18n="footerPhone">Telefoon:</span> <a href="tel:+31000000000">+31 00 000 0000</a></p>
-            <p><span data-i18n="footerAddress">Adres:</span> <span data-i18n="footerAddressValue">Jouw baradres hier</span></p>
+            <p><span data-i18n="footerAddress">Adres:</span> <span data-i18n="footerAddressValue">Jouw baradres
+                    hier</span></p>
         </div>
 
         <div class="footer-column">
@@ -140,16 +155,18 @@
 
     <script>
         const translations = {
-            nl: {
-                navHome: 'Home', navMenu: 'Menu', navEvents: 'Evenementen', navContact: 'Contact',
-                eventsEyebrow: 'Evenementen bij Hertz Ecke', eventsHeroTitle: 'Voetbal, DJ-avonden en speciale nachten', eventsHeroText: 'Bekijk wat er op de planning staat en kom langs voor een avond met drankjes, muziek en goede sfeer.', eventsHeroButton: 'Bekijk evenementen',
-                introLabel: 'Wat gebeurt er?', introTitle: 'Een baravond hoeft niet gewoon te zijn.', introText: 'Gebruik deze pagina voor voetbalwedstrijden, DJ-nights, live muziek, privéfeesten of tijdelijke acties. De eigenaar kan de kaarten later makkelijk aanpassen in de HTML.',
-                filterAll: 'Alles', filterFootball: 'Voetbal', filterMusic: 'Muziek & DJ', filterPrivate: 'Privé events',
-                footballDateTop: 'Wedstrijd', footballDateBottom: 'avonden', footballType: 'Voetbal live', footballTitle: 'Live voetbal op groot scherm', footballText: 'Kom langs voor grote wedstrijden, koude drankjes en een volle bar-sfeer. Perfect voor Champions League, EK/WK en belangrijke clubwedstrijden.', footballButton: 'Vraag naar de volgende match',
-                djDateTop: 'Binnenkort', djDateBottom: 'DJ', djType: 'Muziek', djTitle: 'DJ Night', djText: 'Een energieke avond met cocktails, neonlicht en muziek. De exacte datum en DJ-naam kunnen later door de eigenaar worden ingevuld.',
-                liveDateTop: 'Vrijdag', liveDateBottom: 'Live', liveType: 'Speciale avond', liveTitle: 'Live muziek & cocktails', liveText: 'Een ontspannen avond voor gasten die willen genieten van muziek, gesprekken en signature drinks.',
-                privateDateTop: 'Op', privateDateBottom: 'aanvraag', privateType: 'Privé event', privateTitle: 'Verjaardagen en privéfeesten', privateText: 'Plan je eigen avond bij Hertz Ecke. Neem contact op voor beschikbaarheid, drankopties en groepsafspraken.', privateButton: 'Neem contact op',
-                footerHoursTitle: 'Openingstijden', footerHoursWeek: 'Maandag - donderdag: 18:00 - 01:00', footerHoursWeekend: 'Vrijdag - zaterdag: 18:00 - 03:00', footerHoursSunday: 'Zondag: Gesloten', footerContactTitle: 'Contact', footerPhone: 'Telefoon:', footerAddress: 'Adres:', footerAddressValue: 'Jouw baradres hier', footerLinksTitle: 'Links', footerWebsiteWolt: 'Order from Wolt', footerWebsiteLieferando: 'Order from Lieferando'
+            de: {
+                navHome: 'Startseite', navMenu: 'Speisekarte', navEvents: 'Veranstaltungen', navContact: 'Kontakt',
+                eventsEyebrow: 'Veranstaltungen bei Hertz Ecke', eventsHeroTitle: 'Fußball, DJ-Abende und besondere Nächte', eventsHeroText: 'Entdecken Sie unsere kommenden Veranstaltungen und genießen Sie Getränke, Musik und eine großartige Atmosphäre.', eventsHeroButton: 'Veranstaltungen ansehen',
+                introLabel: 'Was ist los?', introTitle: 'Ein Barabend muss nicht gewöhnlich sein.', introText: 'Nutzen Sie diese Seite für Fußballspiele, DJ-Abende, Live-Musik, private Feiern oder Sonderaktionen. Der Besitzer kann die Karten später einfach im HTML bearbeiten.',
+                filterAll: 'Alle', filterFootball: 'Fußball', filterMusic: 'Musik & DJ', filterPrivate: 'Private Veranstaltungen',
+                footballDateTop: 'Spiel', footballDateBottom: 'Abende', footballType: 'Live-Fußball', footballTitle: 'Live-Fußball auf Großbildschirm', footballText: 'Erleben Sie große Spiele mit kalten Getränken und echter Stadionstimmung. Perfekt für Champions League, EM, WM und wichtige Vereinsduelle.', footballButton: 'Nach dem nächsten Spiel fragen',
+                djDateTop: 'Demnächst', djDateBottom: 'DJ', djType: 'Musik',djTitle: 'DJ-Nacht', djText: 'Ein energiegeladener Abend mit Cocktails, Neonlicht und Musik. Das genaue Datum und der DJ können später ergänzt werden.',
+                liveDateTop: 'Freitag', liveDateBottom: 'Live', liveType: 'Besonderer Abend', liveTitle: 'Live-Musik & Cocktails', liveText: 'Ein entspannter Abend für Gäste, die Musik, gute Gespräche und Signature-Drinks genießen möchten.',
+                privateDateTop: 'Auf', privateDateBottom: 'Anfrage', privateType: 'Private Veranstaltung', privateTitle: 'Geburtstage und private Feiern', privateText: 'Planen Sie Ihren eigenen Abend in der Hertz Ecke. Kontaktieren Sie uns für Verfügbarkeit, Getränkeoptionen und Gruppenreservierungen.', privateButton: 'Kontakt aufnehmen',
+                footerHoursTitle: 'Öffnungszeiten', footerHoursWeek: 'Montag – Donnerstag: 18:00 – 01:00', footerHoursWeekend: 'Freitag – Samstag: 18:00 – 03:00', footerHoursSunday: 'Sonntag: Geschlossen',
+                footerContactTitle: 'Kontakt', footerPhone: 'Telefon:', footerAddress: 'Adresse:', footerAddressValue: 'Ihre Baradresse hier',
+                footerLinksTitle: 'Links', footerWebsiteWolt: 'Bei Wolt bestellen', footerWebsiteLieferando: 'Bei Lieferando bestellen'
             },
             en: {
                 navHome: 'Home', navMenu: 'Menu', navEvents: 'Events', navContact: 'Contact us',
@@ -189,9 +206,10 @@
         languageSelect.addEventListener('change', (event) => setLanguage(event.target.value));
         filterButtons.forEach((button) => button.addEventListener('click', () => filterEvents(button.dataset.filter)));
 
-        const savedLanguage = localStorage.getItem('hertzEckeLanguage') || 'nl';
+        const savedLanguage = localStorage.getItem('hertzEckeLanguage') || 'de';
         languageSelect.value = savedLanguage;
         setLanguage(savedLanguage);
     </script>
 </body>
+
 </html>

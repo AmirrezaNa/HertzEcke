@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
                 </a>
 
                 <select id="languageSelect" class="language-select" aria-label="Choose language">
-                    <option value="nl">Dutch</option>
+                    <option value="de">Deutsch</option>
                     <option value="en">English</option>
                 </select>
             </div>
@@ -88,14 +88,14 @@
 
     <footer class="site-footer">
         <div class="footer-column">
-            <h3 data-i18n="footerHoursTitle">Openingstijden</h3>
-            <p data-i18n="footerHoursWeek">Maandag - donderdag: 18:00 - 01:00</p>
-            <p data-i18n="footerHoursWeekend">Vrijdag - zaterdag: 18:00 - 03:00</p>
-            <p data-i18n="footerHoursSunday">Zondag: Gesloten</p>
+            <h3 data-i18n="footerHoursTitle">Öffnungszeiten</h3>
+            <p data-i18n="footerHoursWeek">Montag - Donnerstag: 18:00 - 01:00</p>
+            <p data-i18n="footerHoursWeekend">Freitag - Samstag: 18:00 - 03:00</p>
+            <p data-i18n="footerHoursSunday">Sonntag: Geschlossen</p>
         </div>
 
         <div class="footer-column">
-            <h3 data-i18n="footerContactTitle">Contact</h3>
+            <h3 data-i18n="footerContactTitle">Kontakt</h3>
             <p><span data-i18n="footerPhone">Telefoon:</span> <a href="tel:+31000000000">+31 00 000 0000</a></p>
             <p><span data-i18n="footerAddress">Adres:</span> <span data-i18n="footerAddressValue">Jouw baradres hier</span></p>
         </div>
@@ -110,12 +110,12 @@
 
     <script>
         const translations = {
-            nl: {
-                navHome: 'Home', navMenu: 'Menu', navEvents: 'Evenementen', navContact: 'Contact',
-                contactEyebrow: 'Contact Hertz Ecke', contactHeroTitle: 'Kom langs of neem contact op', contactHeroText: 'Vind onze openingstijden, telefoonnummer, adres en Google Maps-locatie.', contactHeroButton: 'Bekijk contactgegevens',
-                hoursLabel: 'Openingstijden', hoursTitle: 'Wanneer zijn we open?', hoursMonThu: 'Maandag - donderdag', hoursFriSat: 'Vrijdag - zaterdag', hoursSunday: 'Zondag', closed: 'Gesloten',
-                phoneLabel: 'Telefoon', phoneTitle: 'Bel ons', phoneText: 'Voor vragen over reserveringen, evenementen of privéfeesten kun je ons bellen.',
-                addressLabel: 'Adres', addressTitle: 'Onze locatie', addressValue: 'Jouw baradres hier', openMaps: 'Open in Google Maps',
+            de: {
+                navHome: 'Home', navMenu: 'Menu', navEvents: 'Veranstaltungen', navContact: 'Kontakt',
+                contactEyebrow: 'Kontakt Hertz Ecke', contactHeroTitle: 'Besuchen Sie uns oder kontaktieren Sie uns', contactHeroText: 'Finden Sie unsere Öffnungszeiten, Telefonnummer, Adresse und Google Maps-Location.', contactHeroButton: 'Kontaktdaten ansehen',
+                hoursLabel: 'Öffnungszeiten', hoursTitle: 'Wann sind wir geöffnet?', hoursMonThu: 'Montag - Donnerstag', hoursFriSat: 'Freitag - Samstag', hoursSunday: 'Sonntag', closed: 'Geschlossen',
+                phoneLabel: 'Telefon', phoneTitle: 'Rufen Sie uns an', phoneText: 'Für Fragen zu Reservierungen, Veranstaltungen oder privaten Feiern können Sie uns anrufen.',
+                addressLabel: 'Adresse', addressTitle: 'Unsere Location', addressValue: 'Ihre Baradresse hier', openMaps: 'In Google Maps öffnen',
                 mapLabel: 'Google Maps', mapTitle: 'Vind ons op de kaart', mapText: 'Vervang later de zoektekst in de Google Maps-link door het echte adres van de bar.',
                 footerHoursTitle: 'Openingstijden', footerHoursWeek: 'Maandag - donderdag: 18:00 - 01:00', footerHoursWeekend: 'Vrijdag - zaterdag: 18:00 - 03:00', footerHoursSunday: 'Zondag: Gesloten', footerContactTitle: 'Contact', footerPhone: 'Telefoon:', footerAddress: 'Adres:', footerAddressValue: 'Jouw baradres hier', footerLinksTitle: 'Links', footerWebsiteWolt: 'Order from Wolt', footerWebsiteLieferando: 'Order from Lieferando'
             },
@@ -144,7 +144,7 @@
 
         languageSelect.addEventListener('change', (event) => setLanguage(event.target.value));
 
-        const savedLanguage = localStorage.getItem('hertzEckeLanguage') || 'nl';
+        const savedLanguage = localStorage.getItem('hertzEckeLanguage') || 'de';
         languageSelect.value = savedLanguage;
         setLanguage(savedLanguage);
     </script>

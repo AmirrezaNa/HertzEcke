@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
                 </a>
 
                 <select id="languageSelect" class="language-select" aria-label="Choose language">
-                    <option value="nl">Dutch</option>
+                    <option value="de">Deutsch</option>
                     <option value="en">English</option>
                 </select>
             </div>
@@ -101,13 +101,13 @@
                 footerHoursTitle: 'Working hours', footerHoursWeek: 'Monday - Thursday: 18:00 - 01:00', footerHoursWeekend: 'Friday - Saturday: 18:00 - 03:00', footerHoursSunday: 'Sunday: Closed',
                 footerContactTitle: 'Contact', footerPhone: 'Phone:', footerAddress: 'Address:', footerAddressValue: 'Your bar address here', footerLinksTitle: 'Links', footerWebsiteWolt: 'Order from Wolt', footerWebsiteLieferando: 'Order from Lieferando'
             },
-            nl: {
-                navHome: 'Home', navMenu: 'Menu', navEvents: 'Evenementen', navContact: 'Contact',
-                heroEyebrow: 'Cocktailbar', heroTitle: 'Welkom bij Hertz Ecke', heroText: 'Een neonverlichte plek voor cocktails, muziek, evenementen en late avonden.', heroButton: 'Bekijk ons menu',
-                menuLabel: 'Menu', menuTitle: 'Signature drinks en barfavorieten', menuText: 'Van kleurrijke cocktails tot klassieke drankjes: ons menu is gemaakt voor ontspannen avonden en feesten.', menuButton: 'Naar het menu',
-                eventsLabel: 'Evenementen', eventsTitle: 'Live avonden, privéfeesten en speciale events', eventsText: 'Bekijk onze aankomende evenementen of neem contact op om je eigen avond bij Hertz Ecke te plannen.', eventsButton: 'Bekijk events',
-                footerHoursTitle: 'Openingstijden', footerHoursWeek: 'Maandag - donderdag: 18:00 - 01:00', footerHoursWeekend: 'Vrijdag - zaterdag: 18:00 - 03:00', footerHoursSunday: 'Zondag: Gesloten',
-                footerContactTitle: 'Contact', footerPhone: 'Telefoon:', footerAddress: 'Adres:', footerAddressValue: 'Jouw baradres hier', footerLinksTitle: 'Links', footerWebsiteWolt: 'Bestel van Wolt', footerWebsiteLieferando: 'Bestel van Lieferando'
+            de: {
+                navHome: 'Home', navMenu: 'Menu', navEvents: 'Veranstaltungen', navContact: 'Kontakt',
+                heroEyebrow: 'Cocktailbar', heroTitle: 'Willkommen bei Hertz Ecke', heroText: 'Eine neonbeleuchtete Ecke für Cocktails, Musik, Veranstaltungen und späte Abende.', heroButton: 'Unser Menu entdecken',
+                menuLabel: 'Menu', menuTitle: 'Signaturgetränke und Bar-Favoriten', menuText: 'Von bunten Cocktails bis hin zu klassischen Getränken: unser Menu ist für entspannte Abende und Feierlichkeiten gemacht.', menuButton: 'Zum Menu',
+                eventsLabel: 'Veranstaltungen', eventsTitle: 'Live-Abende, private Partys und besondere Ereignisse', eventsText: 'Behalten Sie unsere bevorstehenden Veranstaltungen im Auge oder kontaktieren Sie uns, um Ihren eigenen Abend bei Hertz Ecke zu planen.', eventsButton: 'Veranstaltungen ansehen',
+                footerHoursTitle: 'Öffnungszeiten', footerHoursWeek: 'Montag - Donnerstag: 18:00 - 01:00', footerHoursWeekend: 'Freitag - Samstag: 18:00 - 03:00', footerHoursSunday: 'Sonntag: Geschlossen',
+                footerContactTitle: 'Kontakt', footerPhone: 'Telefon:', footerAddress: 'Adresse:', footerAddressValue: 'Ihre Baradresse hier', footerLinksTitle: 'Links', footerWebsiteWolt: 'Bestellen Sie von Wolt', footerWebsiteLieferando: 'Bestellen Sie von Lieferando'
             }
         };
 
@@ -125,7 +125,7 @@
 
         languageSelect.addEventListener('change', (event) => setLanguage(event.target.value));
 
-        const savedLanguage = localStorage.getItem('hertzEckeLanguage') || 'nl';
+        const savedLanguage = localStorage.getItem('hertzEckeLanguage') || 'de';
         languageSelect.value = savedLanguage;
         setLanguage(savedLanguage);
     </script>
