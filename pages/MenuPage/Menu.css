@@ -445,6 +445,7 @@ a {
 
 @media (max-width: 900px) {
     html {
+        background-color: var(--card);
         scroll-padding-top: 255px;
     }
 
