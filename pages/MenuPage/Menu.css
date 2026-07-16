@@ -20,6 +20,7 @@
 }
 
 html {
+    background-color: var(--card);
     scroll-behavior: smooth;
     scroll-padding-top: 150px;
 }
