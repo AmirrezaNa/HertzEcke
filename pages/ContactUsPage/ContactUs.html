@@ -43,7 +43,7 @@
             <div class="contact-hero-content">
                 <p class="eyebrow" data-i18n="contactEyebrow">Contact Hertz Ecke</p>
                 <h1 data-i18n="contactHeroTitle">Kom langs of neem contact op</h1>
-                <p data-i18n="contactHeroText">Vind onze openingstijden, telefoonnummer, adres en Google Maps-locatie.</p>
+                <p data-i18n="contactHeroText">Vind onze openingstijden, telefoonnummer, e-mail, adres en Google Maps-locatie.</p>
                 <a href="#contactInfo" class="primary-button" data-i18n="contactHeroButton">Bekijk contactgegevens</a>
             </div>
         </section>
@@ -66,11 +66,18 @@
                 <a class="contact-link" href="tel:+31000000000">+31 00 000 0000</a>
             </article>
 
+            <!-- NEW: Email Card -->
+            <article class="contact-card">
+                <p class="section-label" data-i18n="emailLabel">E-Mail</p>
+                <h2 data-i18n="emailTitle">Schrijf ons</h2>
+                <p data-i18n="emailText">Stuur ons gerust een e-mail voor al je vragen of opmerkingen.</p>
+                <a class="contact-link" href="mailto:info@hertzecke.de">info@hertzecke.de</a>
+            </article>
+
             <article class="contact-card">
                 <p class="section-label" data-i18n="addressLabel">Adres</p>
                 <h2 data-i18n="addressTitle">Onze locatie</h2>
                 <p class="address-text" data-i18n="addressValue">Heinrich-Hertz-Straße 102</p>
-                <a class="contact-link" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.140732131718!2d10.0244541!3d53.5731049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18ecdec26be77%3A0xcdbccaf25858c64a!2sHeinrich-Hertz-Stra%C3%9Fe%20102%2C%2022083%20Hamburg-Nord%2C%20Germany!5e0!3m2!1sen!2s!4v1784650274241!5m2!1sen!2s" target="_blank" rel="noopener noreferrer" data-i18n="openMaps">Open in Google Maps</a>
             </article>
         </section>
 
@@ -95,8 +102,9 @@
 
         <div class="footer-column">
             <h3 data-i18n="footerContactTitle">Kontakt</h3>
-            <p><span data-i18n="footerPhone">Telefoon:</span> <a href="tel:+31000000000">+31 00 000 0000</a></p>
-            <p><span data-i18n="footerAddress">Adres:</span> <span data-i18n="footerAddressValue">Heinrich-Hertz-Straße 102</span></p>
+            <p><span data-i18n="footerPhone">Telefon:</span> <a href="tel:+31000000000">+31 00 000 0000</a></p>
+            <p><span data-i18n="footerEmail">E-Mail:</span> <a href="mailto:info@hertzecke.de">info@hertzecke.de</a></p>
+            <p><span data-i18n="footerAddress">Adresse:</span> <span data-i18n="footerAddressValue">Heinrich-Hertz-Straße 102</span></p>
         </div>
 
         <div class="footer-column">
@@ -110,22 +118,24 @@
     <script>
         const translations = {
             de: {
-                navHome: 'Home', navMenu: 'Menu', navEvents: 'Veranstaltungen', navContact: 'Kontakt',
-                contactEyebrow: 'Kontakt Hertz Ecke', contactHeroTitle: 'Besuchen Sie uns oder kontaktieren Sie uns', contactHeroText: 'Finden Sie unsere Öffnungszeiten, Telefonnummer, Adresse und Google Maps-Location.', contactHeroButton: 'Kontaktdaten ansehen',
+                navHome: 'Home', navMenu: 'Menü', navEvents: 'Veranstaltungen', navContact: 'Kontakt',
+                contactEyebrow: 'Kontakt Hertz Ecke', contactHeroTitle: 'Besuchen Sie uns oder kontaktieren Sie uns', contactHeroText: 'Finden Sie unsere Öffnungszeiten, Telefonnummer, E-Mail, Adresse und Google Maps-Location.', contactHeroButton: 'Kontaktdaten ansehen',
                 hoursLabel: 'Öffnungszeiten', hoursTitle: 'Wann sind wir geöffnet?', hoursMonThu: 'Montag - Donnerstag', hoursFriSat: 'Freitag - Samstag', hoursSunday: 'Sonntag', closed: 'Geschlossen',
                 phoneLabel: 'Telefon', phoneTitle: 'Rufen Sie uns an', phoneText: 'Für Fragen zu Reservierungen, Veranstaltungen oder privaten Feiern können Sie uns anrufen.',
+                emailLabel: 'E-Mail', emailTitle: 'Schreiben Sie uns', emailText: 'Senden Sie uns gerne eine E-Mail für Fragen oder Anliegen.',
                 addressLabel: 'Adresse', addressTitle: 'Unsere Location', addressValue: 'Heinrich-Hertz-Straße 102', openMaps: 'In Google Maps öffnen',
-                mapLabel: 'Google Maps', mapTitle: 'Vind ons op de kaart', mapText: 'Vervang later de zoektekst in de Google Maps-link door het echte adres van de bar.',
-                footerHoursTitle: 'Openingstijden', footerHoursWeek: 'Maandag - donderdag: 18:00 - 01:00', footerHoursWeekend: 'Vrijdag - zaterdag: 18:00 - 03:00', footerHoursSunday: 'Zondag: Gesloten', footerContactTitle: 'Contact', footerPhone: 'Telefoon:', footerAddress: 'Adres:', footerAddressValue: 'Heinrich-Hertz-Straße 102', footerLinksTitle: 'Links', footerWebsiteWolt: 'Order from Wolt', footerWebsiteLieferando: 'Order from Lieferando'
+                mapLabel: 'Google Maps', mapTitle: 'Finden Sie uns auf der Karte', mapText: 'Vervang later de zoektekst in de Google Maps-link door het echte adres van de bar.',
+                footerHoursTitle: 'Öffnungszeiten', footerHoursWeek: 'Montag - Donnerstag: 18:00 - 01:00', footerHoursWeekend: 'Freitag - Samstag: 18:00 - 03:00', footerHoursSunday: 'Sonntag: Geschlossen', footerContactTitle: 'Kontakt', footerPhone: 'Telefon:', footerEmail: 'E-Mail:', footerAddress: 'Adresse:', footerAddressValue: 'Heinrich-Hertz-Straße 102', footerLinksTitle: 'Links', footerWebsiteWolt: 'Bei Wolt bestellen', footerWebsiteLieferando: 'Bei Lieferando bestellen'
             },
             en: {
                 navHome: 'Home', navMenu: 'Menu', navEvents: 'Events', navContact: 'Contact us',
-                contactEyebrow: 'Contact Hertz Ecke', contactHeroTitle: 'Visit us or get in touch', contactHeroText: 'Find our working hours, phone number, address and Google Maps location.', contactHeroButton: 'View contact details',
+                contactEyebrow: 'Contact Hertz Ecke', contactHeroTitle: 'Visit us or get in touch', contactHeroText: 'Find our working hours, phone number, email, address and Google Maps location.', contactHeroButton: 'View contact details',
                 hoursLabel: 'Working hours', hoursTitle: 'When are we open?', hoursMonThu: 'Monday - Thursday', hoursFriSat: 'Friday - Saturday', hoursSunday: 'Sunday', closed: 'Closed',
                 phoneLabel: 'Phone', phoneTitle: 'Call us', phoneText: 'For questions about reservations, events or private parties, you can call us.',
+                emailLabel: 'Email', emailTitle: 'Email us', emailText: 'Feel free to send us an email with any questions or inquiries.',
                 addressLabel: 'Address', addressTitle: 'Our location', addressValue: 'Heinrich-Hertz-Straße 102', openMaps: 'Open in Google Maps',
                 mapLabel: 'Google Maps', mapTitle: 'Find us on the map', mapText: 'Later, replace the search text in the Google Maps link with the real address of the bar.',
-                footerHoursTitle: 'Working hours', footerHoursWeek: 'Monday - Thursday: 18:00 - 01:00', footerHoursWeekend: 'Friday - Saturday: 18:00 - 03:00', footerHoursSunday: 'Sunday: Closed', footerContactTitle: 'Contact', footerPhone: 'Phone:', footerAddress: 'Address:', footerAddressValue: 'Heinrich-Hertz-Straße 102', footerLinksTitle: 'Links', footerWebsiteWolt: 'Order from Wolt', footerWebsiteLieferando: 'Order from Lieferando'
+                footerHoursTitle: 'Working hours', footerHoursWeek: 'Monday - Thursday: 18:00 - 01:00', footerHoursWeekend: 'Friday - Saturday: 18:00 - 03:00', footerHoursSunday: 'Sunday: Closed', footerContactTitle: 'Contact', footerPhone: 'Phone:', footerEmail: 'Email:', footerAddress: 'Address:', footerAddressValue: 'Heinrich-Hertz-Straße 102', footerLinksTitle: 'Links', footerWebsiteWolt: 'Order from Wolt', footerWebsiteLieferando: 'Order from Lieferando'
             }
         };
 
