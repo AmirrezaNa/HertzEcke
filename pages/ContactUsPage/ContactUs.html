@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hertz Ecke | Contact</title>
+    <title>Hertz Ecke | Kontakt</title>
     <link rel="shortcut icon" href="../../images/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="ContactUs.css">
 </head>
 <body>
     <header class="site-header">
-        <nav class="navbar" aria-label="Main navigation">
-            <a class="logo-link" href="../HomePage/Home.html" aria-label="Hertz Ecke home">
-                <img src="../../images/logo.jpg" alt="Hertz Ecke logo" class="logo">
+        <nav class="navbar" aria-label="Hauptnavigation">
+            <a class="logo-link" href="../HomePage/Home.html" aria-label="Hertz Ecke Startseite">
+                <img src="../../images/logo.jpg" alt="Hertz Ecke Logo" class="logo">
                 <span class="brand-name">Hertz Ecke</span>
             </a>
 
             <ul class="nav-links">
                 <li><a href="../HomePage/Home.html" data-i18n="navHome">Home</a></li>
-                <li><a href="../MenuPage/Menu.html" data-i18n="navMenu">Menu</a></li>
-                <li><a href="../EventsPage/Events.html" data-i18n="navEvents">Evenementen</a></li>
-                <li><a href="ContactUs.html" class="active" data-i18n="navContact">Contact</a></li>
+                <li><a href="../MenuPage/Menu.html" data-i18n="navMenu">Menü</a></li>
+                <li><a href="../EventsPage/Events.html" data-i18n="navEvents">Veranstaltungen</a></li>
+                <li><a href="ContactUs.html" class="active" data-i18n="navContact">Kontakt</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -29,7 +29,7 @@
                     </svg>
                 </a>
 
-                <select id="languageSelect" class="language-select" aria-label="Choose language">
+                <select id="languageSelect" class="language-select" aria-label="Sprache wählen">
                     <option value="de">Deutsch</option>
                     <option value="en">English</option>
                 </select>
@@ -41,50 +41,49 @@
         <section class="contact-hero">
             <div class="contact-hero-overlay"></div>
             <div class="contact-hero-content">
-                <p class="eyebrow" data-i18n="contactEyebrow">Contact Hertz Ecke</p>
-                <h1 data-i18n="contactHeroTitle">Kom langs of neem contact op</h1>
-                <p data-i18n="contactHeroText">Vind onze openingstijden, telefoonnummer, e-mail, adres en Google Maps-locatie.</p>
-                <a href="#contactInfo" class="primary-button" data-i18n="contactHeroButton">Bekijk contactgegevens</a>
+                <p class="eyebrow" data-i18n="contactEyebrow">Kontakt Hertz Ecke</p>
+                <h1 data-i18n="contactHeroTitle">Besuchen Sie uns oder kontaktieren Sie uns</h1>
+                <p data-i18n="contactHeroText">Finden Sie unsere Öffnungszeiten, Telefonnummer, E-Mail, Adresse und Google Maps-Location.</p>
+                <a href="#contactInfo" class="primary-button" data-i18n="contactHeroButton">Kontaktdaten ansehen</a>
             </div>
         </section>
 
-        <section id="contactInfo" class="contact-grid" aria-label="Contact information">
+        <section id="contactInfo" class="contact-grid" aria-label="Kontaktinformationen">
             <article class="contact-card hours-card">
-                <p class="section-label" data-i18n="hoursLabel">Openingstijden</p>
-                <h2 data-i18n="hoursTitle">Wanneer zijn we open?</h2>
+                <p class="section-label" data-i18n="hoursLabel">Öffnungszeiten</p>
+                <h2 data-i18n="hoursTitle">Wann sind wir geöffnet?</h2>
                 <ul class="hours-list">
-                    <li><span data-i18n="hoursMonThu">Maandag - donderdag</span><strong>18:00 - 01:00</strong></li>
-                    <li><span data-i18n="hoursFriSat">Vrijdag - zaterdag</span><strong>18:00 - 03:00</strong></li>
-                    <li><span data-i18n="hoursSunday">Zondag</span><strong data-i18n="closed">Gesloten</strong></li>
+                    <li><span data-i18n="hoursMonThu">Montag - Donnerstag</span><strong>18:00 - 01:00</strong></li>
+                    <li><span data-i18n="hoursFriSat">Freitag - Samstag</span><strong>18:00 - 03:00</strong></li>
+                    <li><span data-i18n="hoursSunday">Sonntag</span><strong data-i18n="closed">Geschlossen</strong></li>
                 </ul>
             </article>
 
             <article class="contact-card">
-                <p class="section-label" data-i18n="phoneLabel">Telefoon</p>
-                <h2 data-i18n="phoneTitle">Bel ons</h2>
-                <p data-i18n="phoneText">Voor vragen over reserveringen, evenementen of privéfeesten kun je ons bellen.</p>
+                <p class="section-label" data-i18n="phoneLabel">Telefon</p>
+                <h2 data-i18n="phoneTitle">Rufen Sie uns an</h2>
+                <p data-i18n="phoneText">Für Fragen zu Reservierungen, Veranstaltungen oder privaten Feiern können Sie uns anrufen.</p>
                 <a class="contact-link" href="tel:+31000000000">+31 00 000 0000</a>
             </article>
 
-            <!-- NEW: Email Card -->
             <article class="contact-card">
                 <p class="section-label" data-i18n="emailLabel">E-Mail</p>
-                <h2 data-i18n="emailTitle">Schrijf ons</h2>
-                <p data-i18n="emailText">Stuur ons gerust een e-mail voor al je vragen of opmerkingen.</p>
+                <h2 data-i18n="emailTitle">Schreiben Sie uns</h2>
+                <p data-i18n="emailText">Senden Sie uns gerne eine E-Mail für Fragen oder Anliegen.</p>
                 <a class="contact-link" href="mailto:info@hertzecke.de">info@hertzecke.de</a>
             </article>
 
             <article class="contact-card">
-                <p class="section-label" data-i18n="addressLabel">Adres</p>
-                <h2 data-i18n="addressTitle">Onze locatie</h2>
+                <p class="section-label" data-i18n="addressLabel">Adresse</p>
+                <h2 data-i18n="addressTitle">Unsere Location</h2>
                 <p class="address-text" data-i18n="addressValue">Heinrich-Hertz-Straße 102</p>
             </article>
         </section>
 
-        <section class="map-section" aria-label="Google Maps location">
+        <section class="map-section" aria-label="Google Maps Standort">
             <div class="map-copy">
                 <p class="section-label" data-i18n="mapLabel">Google Maps</p>
-                <h2 data-i18n="mapTitle">Vind ons op de kaart</h2>
+                <h2 data-i18n="mapTitle">Finden Sie uns auf der Karte</h2>
             </div>
             <div class="map-frame">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.140732131718!2d10.0244541!3d53.5731049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18ecdec26be77%3A0xcdbccaf25858c64a!2sHeinrich-Hertz-Stra%C3%9Fe%20102%2C%2022083%20Hamburg-Nord%2C%20Germany!5e0!3m2!1sen!2s!4v1784650274241!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -110,8 +109,8 @@
         <div class="footer-column">
             <h3 data-i18n="footerLinksTitle">Links</h3>
             <a href="https://www.instagram.com/hertzecke/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://wolt.com/de/deu?tld=de" data-i18n="footerWebsiteWolt">Order from Wolt</a>
-            <a href="https://www.lieferando.de/" data-i18n="footerWebsiteLieferando">Lieferando</a>
+            <a href="https://wolt.com/de/deu?tld=de" data-i18n="footerWebsiteWolt">Bei Wolt bestellen</a>
+            <a href="https://www.lieferando.de/" data-i18n="footerWebsiteLieferando">Bei Lieferando bestellen</a>
         </div>
     </footer>
 
@@ -124,7 +123,7 @@
                 phoneLabel: 'Telefon', phoneTitle: 'Rufen Sie uns an', phoneText: 'Für Fragen zu Reservierungen, Veranstaltungen oder privaten Feiern können Sie uns anrufen.',
                 emailLabel: 'E-Mail', emailTitle: 'Schreiben Sie uns', emailText: 'Senden Sie uns gerne eine E-Mail für Fragen oder Anliegen.',
                 addressLabel: 'Adresse', addressTitle: 'Unsere Location', addressValue: 'Heinrich-Hertz-Straße 102', openMaps: 'In Google Maps öffnen',
-                mapLabel: 'Google Maps', mapTitle: 'Finden Sie uns auf der Karte', mapText: 'Vervang later de zoektekst in de Google Maps-link door het echte adres van de bar.',
+                mapLabel: 'Google Maps', mapTitle: 'Finden Sie uns auf der Karte',
                 footerHoursTitle: 'Öffnungszeiten', footerHoursWeek: 'Montag - Donnerstag: 18:00 - 01:00', footerHoursWeekend: 'Freitag - Samstag: 18:00 - 03:00', footerHoursSunday: 'Sonntag: Geschlossen', footerContactTitle: 'Kontakt', footerPhone: 'Telefon:', footerEmail: 'E-Mail:', footerAddress: 'Adresse:', footerAddressValue: 'Heinrich-Hertz-Straße 102', footerLinksTitle: 'Links', footerWebsiteWolt: 'Bei Wolt bestellen', footerWebsiteLieferando: 'Bei Lieferando bestellen'
             },
             en: {
@@ -134,7 +133,7 @@
                 phoneLabel: 'Phone', phoneTitle: 'Call us', phoneText: 'For questions about reservations, events or private parties, you can call us.',
                 emailLabel: 'Email', emailTitle: 'Email us', emailText: 'Feel free to send us an email with any questions or inquiries.',
                 addressLabel: 'Address', addressTitle: 'Our location', addressValue: 'Heinrich-Hertz-Straße 102', openMaps: 'Open in Google Maps',
-                mapLabel: 'Google Maps', mapTitle: 'Find us on the map', mapText: 'Later, replace the search text in the Google Maps link with the real address of the bar.',
+                mapLabel: 'Google Maps', mapTitle: 'Find us on the map',
                 footerHoursTitle: 'Working hours', footerHoursWeek: 'Monday - Thursday: 18:00 - 01:00', footerHoursWeekend: 'Friday - Saturday: 18:00 - 03:00', footerHoursSunday: 'Sunday: Closed', footerContactTitle: 'Contact', footerPhone: 'Phone:', footerEmail: 'Email:', footerAddress: 'Address:', footerAddressValue: 'Heinrich-Hertz-Straße 102', footerLinksTitle: 'Links', footerWebsiteWolt: 'Order from Wolt', footerWebsiteLieferando: 'Order from Lieferando'
             }
         };
