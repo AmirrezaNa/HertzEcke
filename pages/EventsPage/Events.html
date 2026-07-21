@@ -11,29 +11,30 @@
 
 <body>
     <header class="site-header">
-        <nav class="navbar" aria-label="Main navigation">
-            <a class="logo-link" href="../HomePage/Home.html" aria-label="Hertz Ecke home">
-                <img src="../../images/logo.jpg" alt="Hertz Ecke logo" class="logo">
+        <nav class="navbar" aria-label="Hauptnavigation">
+            <a class="logo-link" href="../HomePage/Home.html" aria-label="Hertz Ecke Startseite">
+                <img src="../../images/logo.jpg" alt="Hertz Ecke Logo" class="logo">
                 <span class="brand-name">Hertz Ecke</span>
             </a>
 
             <ul class="nav-links">
-                <li><a href="../HomePage/Home.html" data-i18n="navHome">Home</a></li>
-                <li><a href="../MenuPage/Menu.html" data-i18n="navMenu">Menu</a></li>
-                <li><a href="Events.html" class="active" data-i18n="navEvents">Evenementen</a></li>
-                <li><a href="../ContactUsPage/ContactUs.html" data-i18n="navContact">Contact</a></li>
+                <li><a href="../HomePage/Home.html" data-i18n="navHome">Startseite</a></li>
+                <li><a href="../MenuPage/Menu.html" data-i18n="navMenu">Speisekarte</a></li>
+                <li><a href="Events.html" class="active" data-i18n="navEvents">Veranstaltungen</a></li>
+                <li><a href="../ContactUsPage/ContactUs.html" data-i18n="navContact">Kontakt</a></li>
             </ul>
 
             <div class="nav-actions">
-                <a class="instagram-link" href="https://www.instagram.com/hertzecke/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer"
-                    aria-label="Instagram">
+                <a class="instagram-link"
+                    href="https://www.instagram.com/hertzecke/?utm_source=ig_web_button_share_sheet" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path
                             d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.75 2.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 12 14.75 2.75 2.75 0 0 0 12 9.25Z" />
                     </svg>
                 </a>
 
-                <select id="languageSelect" class="language-select" aria-label="Choose language">
+                <select id="languageSelect" class="language-select" aria-label="Sprache wählen">
                     <option value="de">Deutsch</option>
                     <option value="en">English</option>
                 </select>
@@ -45,86 +46,86 @@
         <section class="events-hero">
             <div class="events-hero-overlay"></div>
             <div class="events-hero-content">
-                <p class="eyebrow" data-i18n="eventsEyebrow">Evenementen bij Hertz Ecke</p>
-                <h1 data-i18n="eventsHeroTitle">Voetbal, DJ-avonden en speciale nachten</h1>
-                <p data-i18n="eventsHeroText">Bekijk wat er op de planning staat en kom langs voor een avond met
-                    drankjes, muziek en goede sfeer.</p>
-                <a href="#eventsList" class="primary-button" data-i18n="eventsHeroButton">Bekijk evenementen</a>
+                <p class="eyebrow" data-i18n="eventsEyebrow">Veranstaltungen bei Hertz Ecke</p>
+                <h1 data-i18n="eventsHeroTitle">Fußball, DJ-Abende und besondere Nächte</h1>
+                <p data-i18n="eventsHeroText">Entdecken Sie unsere kommenden Veranstaltungen und genießen Sie Getränke,
+                    Musik und eine großartige Atmosphäre.</p>
+                <a href="#eventsList" class="primary-button" data-i18n="eventsHeroButton">Veranstaltungen ansehen</a>
             </div>
         </section>
 
         <section class="event-intro">
             <div>
-                <p class="section-label" data-i18n="introLabel">Wat gebeurt er?</p>
-                <h2 data-i18n="introTitle">Een baravond hoeft niet gewoon te zijn.</h2>
+                <p class="section-label" data-i18n="introLabel">Was ist los?</p>
+                <h2 data-i18n="introTitle">Ein Barabend muss nicht gewöhnlich sein.</h2>
             </div>
-            <p data-i18n="introText">Gebruik deze pagina voor voetbalwedstrijden, DJ-nights, live muziek, privéfeesten
-                of tijdelijke acties. De eigenaar kan de kaarten later makkelijk aanpassen in de HTML.</p>
+            <p data-i18n="introText">Nutzen Sie diese Seite für Fußballspiele, DJ-Abende, Live-Musik, private Feiern
+                oder Sonderaktionen. Der Besitzer kann die Karten später einfach im HTML bearbeiten.</p>
         </section>
 
-        <section class="event-control" aria-label="Event category controls">
-            <button class="event-filter active" type="button" data-filter="all" data-i18n="filterAll">Alles</button>
+        <section class="event-control" aria-label="Kategoriefilter für Veranstaltungen">
+            <button class="event-filter active" type="button" data-filter="all" data-i18n="filterAll">Alle</button>
             <button class="event-filter" type="button" data-filter="football"
-                data-i18n="filterFootball">Voetbal</button>
-            <button class="event-filter" type="button" data-filter="music" data-i18n="filterMusic">Muziek & DJ</button>
-            <button class="event-filter" type="button" data-filter="private" data-i18n="filterPrivate">Privé
-                events</button>
+                data-i18n="filterFootball">Fußball</button>
+            <button class="event-filter" type="button" data-filter="music" data-i18n="filterMusic">Musik & DJ</button>
+            <button class="event-filter" type="button" data-filter="private" data-i18n="filterPrivate">Private
+                Veranstaltungen</button>
         </section>
 
-        <section id="eventsList" class="events-grid" aria-label="Upcoming events">
+        <section id="eventsList" class="events-grid" aria-label="Kommende Veranstaltungen">
             <article class="event-card featured" data-category="football">
                 <div class="event-date">
-                    <span data-i18n="footballDateTop">Wedstrijd</span>
-                    <strong data-i18n="footballDateBottom">avonden</strong>
+                    <span data-i18n="footballDateTop">Spiel</span>
+                    <strong data-i18n="footballDateBottom">Abende</strong>
                 </div>
                 <div class="event-content">
-                    <p class="event-type" data-i18n="footballType">Voetbal live</p>
-                    <h2 data-i18n="footballTitle">Live voetbal op groot scherm</h2>
-                    <p data-i18n="footballText">Kom langs voor grote wedstrijden, koude drankjes en een volle bar-sfeer.
-                        Perfect voor Champions League, EK/WK en belangrijke clubwedstrijden.</p>
-                    <a href="../ContactUsPage/ContactUs.html" class="secondary-button" data-i18n="footballButton">Vraag
-                        naar de volgende match</a>
+                    <p class="event-type" data-i18n="footballType">Live-Fußball</p>
+                    <h2 data-i18n="footballTitle">Live-Fußball auf Großbildschirm</h2>
+                    <p data-i18n="footballText">Erleben Sie große Spiele mit kalten Getränken und echter
+                        Stadionstimmung. Perfekt für Champions League, EM, WM und wichtige Vereinsduelle.</p>
+                    <a href="../ContactUsPage/ContactUs.html" class="secondary-button" data-i18n="footballButton">Nach
+                        dem nächsten Spiel fragen</a>
                 </div>
             </article>
 
             <article class="event-card" data-category="music">
                 <div class="event-date">
-                    <span data-i18n="djDateTop">Binnenkort</span>
+                    <span data-i18n="djDateTop">Demnächst</span>
                     <strong data-i18n="djDateBottom">DJ</strong>
                 </div>
                 <div class="event-content">
-                    <p class="event-type" data-i18n="djType">Muziek</p>
-                    <h2 data-i18n="djTitle">DJ Night</h2>
-                    <p data-i18n="djText">Een energieke avond met cocktails, neonlicht en muziek. De exacte datum en
-                        DJ-naam kunnen later door de eigenaar worden ingevuld.</p>
+                    <p class="event-type" data-i18n="djType">Musik</p>
+                    <h2 data-i18n="djTitle">DJ-Nacht</h2>
+                    <p data-i18n="djText">Ein energiegeladener Abend mit Cocktails, Neonlicht und Musik. Das genaue
+                        Datum und der DJ können später ergänzt werden.</p>
                 </div>
             </article>
 
             <article class="event-card" data-category="music">
                 <div class="event-date">
-                    <span data-i18n="liveDateTop">Vrijdag</span>
+                    <span data-i18n="liveDateTop">Freitag</span>
                     <strong data-i18n="liveDateBottom">Live</strong>
                 </div>
                 <div class="event-content">
-                    <p class="event-type" data-i18n="liveType">Speciale avond</p>
-                    <h2 data-i18n="liveTitle">Live muziek & cocktails</h2>
-                    <p data-i18n="liveText">Een ontspannen avond voor gasten die willen genieten van muziek, gesprekken
-                        en signature drinks.</p>
+                    <p class="event-type" data-i18n="liveType">Besonderer Abend</p>
+                    <h2 data-i18n="liveTitle">Live-Musik & Cocktails</h2>
+                    <p data-i18n="liveText">Ein entspannter Abend für Gäste, die Musik, gute Gespräche und
+                        Signature-Drinks genießen möchten.</p>
                 </div>
             </article>
 
             <article class="event-card" data-category="private">
                 <div class="event-date">
-                    <span data-i18n="privateDateTop">Op</span>
-                    <strong data-i18n="privateDateBottom">aanvraag</strong>
+                    <span data-i18n="privateDateTop">Auf</span>
+                    <strong data-i18n="privateDateBottom">Anfrage</strong>
                 </div>
                 <div class="event-content">
-                    <p class="event-type" data-i18n="privateType">Privé event</p>
-                    <h2 data-i18n="privateTitle">Verjaardagen en privéfeesten</h2>
-                    <p data-i18n="privateText">Plan je eigen avond bij Hertz Ecke. Neem contact op voor beschikbaarheid,
-                        drankopties en groepsafspraken.</p>
-                    <a href="../ContactUsPage/ContactUs.html" class="secondary-button" data-i18n="privateButton">Neem
-                        contact op</a>
+                    <p class="event-type" data-i18n="privateType">Private Veranstaltung</p>
+                    <h2 data-i18n="privateTitle">Geburtstage und private Feiern</h2>
+                    <p data-i18n="privateText">Planen Sie Ihren eigenen Abend in der Hertz Ecke. Kontaktieren Sie uns
+                        für Verfügbarkeit, Getränkeoptionen und Gruppenreservierungen.</p>
+                    <a href="../ContactUsPage/ContactUs.html" class="secondary-button" data-i18n="privateButton">Kontakt
+                        aufnehmen</a>
                 </div>
             </article>
         </section>
@@ -132,24 +133,26 @@
 
     <footer class="site-footer">
         <div class="footer-column">
-            <h3 data-i18n="footerHoursTitle">Openingstijden</h3>
-            <p data-i18n="footerHoursWeek">Maandag - donderdag: 18:00 - 01:00</p>
-            <p data-i18n="footerHoursWeekend">Vrijdag - zaterdag: 18:00 - 03:00</p>
-            <p data-i18n="footerHoursSunday">Zondag: Gesloten</p>
+            <h3 data-i18n="footerHoursTitle">Öffnungszeiten</h3>
+            <p data-i18n="footerHoursWeek">Montag – Donnerstag: 18:00 – 01:00</p>
+            <p data-i18n="footerHoursWeekend">Freitag – Samstag: 18:00 – 03:00</p>
+            <p data-i18n="footerHoursSunday">Sonntag: Geschlossen</p>
         </div>
 
         <div class="footer-column">
             <h3 data-i18n="footerContactTitle">Kontakt</h3>
             <p><span data-i18n="footerPhone">Telefon:</span> <a href="tel:+31000000000">+31 00 000 0000</a></p>
             <p><span data-i18n="footerEmail">E-Mail:</span> <a href="mailto:info@hertzecke.de">info@hertzecke.de</a></p>
-            <p><span data-i18n="footerAddress">Adresse:</span> <span data-i18n="footerAddressValue">Heinrich-Hertz-Straße 102</span></p>
+            <p><span data-i18n="footerAddress">Adresse:</span> <span
+                    data-i18n="footerAddressValue">Heinrich-Hertz-Straße 102</span></p>
         </div>
 
         <div class="footer-column">
             <h3 data-i18n="footerLinksTitle">Links</h3>
-            <a href="https://www.instagram.com/hertzecke/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://wolt.com/de/deu?tld=de" data-i18n="footerWebsiteWolt">Order from Wolt</a>
-            <a href="https://www.lieferando.de/" data-i18n="footerWebsiteLieferando">Lieferando</a>
+            <a href="https://www.instagram.com/hertzecke/?utm_source=ig_web_button_share_sheet" target="_blank"
+                rel="noopener noreferrer">Instagram</a>
+            <a href="https://wolt.com/de/deu?tld=de" data-i18n="footerWebsiteWolt">Bei Wolt bestellen</a>
+            <a href="https://www.lieferando.de/" data-i18n="footerWebsiteLieferando">Bei Lieferando bestellen</a>
         </div>
     </footer>
 
@@ -161,7 +164,7 @@
                 introLabel: 'Was ist los?', introTitle: 'Ein Barabend muss nicht gewöhnlich sein.', introText: 'Nutzen Sie diese Seite für Fußballspiele, DJ-Abende, Live-Musik, private Feiern oder Sonderaktionen. Der Besitzer kann die Karten später einfach im HTML bearbeiten.',
                 filterAll: 'Alle', filterFootball: 'Fußball', filterMusic: 'Musik & DJ', filterPrivate: 'Private Veranstaltungen',
                 footballDateTop: 'Spiel', footballDateBottom: 'Abende', footballType: 'Live-Fußball', footballTitle: 'Live-Fußball auf Großbildschirm', footballText: 'Erleben Sie große Spiele mit kalten Getränken und echter Stadionstimmung. Perfekt für Champions League, EM, WM und wichtige Vereinsduelle.', footballButton: 'Nach dem nächsten Spiel fragen',
-                djDateTop: 'Demnächst', djDateBottom: 'DJ', djType: 'Musik',djTitle: 'DJ-Nacht', djText: 'Ein energiegeladener Abend mit Cocktails, Neonlicht und Musik. Das genaue Datum und der DJ können später ergänzt werden.',
+                djDateTop: 'Demnächst', djDateBottom: 'DJ', djType: 'Musik', djTitle: 'DJ-Nacht', djText: 'Ein energiegeladener Abend mit Cocktails, Neonlicht und Musik. Das genaue Datum und der DJ können später ergänzt werden.',
                 liveDateTop: 'Freitag', liveDateBottom: 'Live', liveType: 'Besonderer Abend', liveTitle: 'Live-Musik & Cocktails', liveText: 'Ein entspannter Abend für Gäste, die Musik, gute Gespräche und Signature-Drinks genießen möchten.',
                 privateDateTop: 'Auf', privateDateBottom: 'Anfrage', privateType: 'Private Veranstaltung', privateTitle: 'Geburtstage und private Feiern', privateText: 'Planen Sie Ihren eigenen Abend in der Hertz Ecke. Kontaktieren Sie uns für Verfügbarkeit, Getränkeoptionen und Gruppenreservierungen.', privateButton: 'Kontakt aufnehmen',
                 footerHoursTitle: 'Öffnungszeiten', footerHoursWeek: 'Montag – Donnerstag: 18:00 – 01:00', footerHoursWeekend: 'Freitag – Samstag: 18:00 – 03:00', footerHoursSunday: 'Sonntag: Geschlossen',
@@ -177,7 +180,9 @@
                 djDateTop: 'Coming soon', djDateBottom: 'DJ', djType: 'Music', djTitle: 'DJ Night', djText: 'An energetic evening with cocktails, neon light and music. The exact date and DJ name can be added later by the owner.',
                 liveDateTop: 'Friday', liveDateBottom: 'Live', liveType: 'Special night', liveTitle: 'Live music & cocktails', liveText: 'A relaxed evening for guests who want to enjoy music, conversations and signature drinks.',
                 privateDateTop: 'On', privateDateBottom: 'request', privateType: 'Private event', privateTitle: 'Birthdays and private parties', privateText: 'Plan your own evening at Hertz Ecke. Contact us for availability, drink options and group arrangements.', privateButton: 'Contact us',
-                footerHoursTitle: 'Working hours', footerHoursWeek: 'Monday - Thursday: 18:00 - 01:00', footerHoursWeekend: 'Friday - Saturday: 18:00 - 03:00', footerHoursSunday: 'Sunday: Closed', footerContactTitle: 'Contact', footerPhone: 'Phone:', footerEmail: 'E-Mail:', footerAddress: 'Address:', footerAddressValue: 'Heinrich-Hertz-Straße 102', footerLinksTitle: 'Links', footerWebsiteWolt: 'Order from Wolt', footerWebsiteLieferando: 'Order from Lieferando'
+                footerHoursTitle: 'Working hours', footerHoursWeek: 'Monday - Thursday: 18:00 - 01:00', footerHoursWeekend: 'Friday - Saturday: 18:00 - 03:00', footerHoursSunday: 'Sunday: Closed',
+                footerContactTitle: 'Contact', footerPhone: 'Phone:', footerEmail: 'E-Mail:', footerAddress: 'Address:', footerAddressValue: 'Heinrich-Hertz-Straße 102',
+                footerLinksTitle: 'Links', footerWebsiteWolt: 'Order from Wolt', footerWebsiteLieferando: 'Order from Lieferando'
             }
         };
 
