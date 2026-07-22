@@ -847,7 +847,16 @@
             button.addEventListener('click', () => {
                 const target = document.getElementById(button.dataset.target);
                 if (!target) return;
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                const headerOffset = 170;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+
                 setActiveCategory(button.dataset.target);
             });
         });
