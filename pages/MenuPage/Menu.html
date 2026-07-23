@@ -56,7 +56,8 @@
 
         <section id="menuCategories" class="category-control" aria-label="Menu category controls">
             <button class="category-button" type="button" data-target="soft" data-i18n="catSoft">Soft drinks</button>
-            <button class="category-button" type="button" data-target="lemonades" data-i18n="catLemonades">Lemonades</button>
+            <button class="category-button" type="button" data-target="lemonades"
+                data-i18n="catLemonades">Lemonades</button>
             <button class="category-button" type="button" data-target="icedtea" data-i18n="catIcedTea">Iced Tea</button>
             <button class="category-button active" type="button" data-target="sparkling"
                 data-i18n="catSparkling">Sparkling & Aperitif</button>
@@ -300,7 +301,13 @@
                 </div>
                 <div class="menu-grid">
                     <div class="menu-card">
-                        <h3>Crémant Rosé</h3>
+                        <div class="card-header">
+                            <h3>Crémant Rosé</h3>
+                            <div class="price-list">
+                                <span>0.1 - 5,90 €</span>
+                                <span>0.7 - 36,90 €</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="menu-card">
                         <h3>Sekt</h3>
@@ -309,19 +316,19 @@
                         <h3>Champagner</h3>
                     </div>
                     <div class="menu-card">
-                        <h3>Aperol Spritz</h3>
+                        <h3>Aperol Spritz <span class="price">7,90 €</span></h3>
                     </div>
                     <div class="menu-card">
-                        <h3>Limoncello Spritz</h3>
+                        <h3>Limoncello Spritz <span class="price">7,90 €</span></h3>
                     </div>
                     <div class="menu-card">
-                        <h3>Lillet Wildberry</h3>
+                        <h3>Lillet Wildberry <span class="price">7,90 €</span></h3>
                     </div>
                     <div class="menu-card">
-                        <h3>Pornstar Spritz</h3>
+                        <h3>Pornstar Spritz <span class="price">8,50 €</span></h3>
                     </div>
                     <div class="menu-card">
-                        <h3>Campari Spritz</h3>
+                        <h3>Campari Spritz <span class="price">7,90 €</span></h3>
                     </div>
                 </div>
             </article>
@@ -769,7 +776,7 @@
                 catHot: 'Hot drinks',
                 catLemonades: 'Lemonades',
                 catIcedTea: 'Iced Tea',
-                
+
                 icedTea1: 'green tea · lime juice · sugar syrup · cucumber slices',
                 icedTea2: 'black tea · mango purée · passion fruit purée · lime juice',
                 icedTea3: 'black tea · peach syrup · orange juice · lemon juice',
