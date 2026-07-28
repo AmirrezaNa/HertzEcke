@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz Ecke | Menu</title>
+    <link rel="shortcut icon" href="../../images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Menu.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo-link" href="../HomePage/Home.html" aria-label="Hertz Ecke home">
+                <img src="../../images/logo.jpg" alt="Hertz Ecke logo" class="logo">
+                <span class="brand-name">Hertz Ecke</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../HomePage/Home.html" data-i18n="navHome">Home</a></li>
+                <li><a href="../MenuPage/DrinksMenu.html" data-i18n="navDrinksMenu">Getränkemenü</a></li>
+                <li><a href="../MenuPage/FoodMenu.html" data-i18n="navFoodMenu">Speisemenü</a></li>
+                <li><a href="../EventsPage/Events.html" data-i18n="navEvents">Events</a></li>
+                <li><a href="../ContactUsPage/ContactUs.html" data-i18n="navContact">Contact us</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a class="instagram-link"
+                    href="https://www.instagram.com/hertzecke/?utm_source=ig_web_button_share_sheet" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.75 2.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 12 14.75 2.75 2.75 0 0 0 12 9.25Z" />
+                    </svg>
+                </a>
+
+                <select id="languageSelect" class="language-select" aria-label="Choose language">
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-hero">
+            <div class="menu-hero-overlay"></div>
+            <div class="menu-hero-content">
+                <p class="eyebrow" data-i18n="menuEyebrow">Hertz Ecke menu</p>
+                <h1 data-i18n="menuHeroTitle">Good drinks. Good food. Good vibes.</h1>
+                <p data-i18n="menuHeroText">Explore our menu by category and jump smoothly to the section you want.</p>
+                <a href="#menuCategories" class="primary-button" data-i18n="menuHeroButton">View categories</a>
+            </div>
+        </section>
+
+        <section id="menuCategories" class="category-control" aria-label="Menu category controls">
+            <button class="category-button active" type="button" data-target="sides" data-i18n="catSides">Sides</button>
+            <button class="category-button" type="button" data-target="snacks" data-i18n="catSnacks">Snacks</button>
+            <button class="category-button" type="button" data-target="croques" data-i18n="catCroques">Croques</button>
+            <button class="category-button" type="button" data-target="burger" data-i18n="catBurger">Burger</button>
+            <button class="category-button" type="button" data-target="salate" data-i18n="catSalate">Salate</button>
+            <button class="category-button" type="button" data-target="dessert" data-i18n="catDessert">Dessert</button>
+            <button class="category-button" type="button" data-target="dips" data-i18n="catDips">Dips</button>
+        </section>
+
+        <section class="menu-board" aria-label="Menu items">
+
+            
+            <article id="sides" class="menu-section" data-section="sides">
+                <div class="section-heading">
+                    <span></span>
+                    <h2 data-i18n="catSides">Sides</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card with-note">
+                        <h3>Nachos <span class="price">4,90 €</span></h3>
+                        <p data-i18n="ingNachos">Tortilla-Nachos, heiße Cheddar-Käsesauce</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Nachos Upgrade <span class="price">6,90 €</span></h3>
+                        <p data-i18n="ingNachosUp">Tortilla-Nachos, heiße Cheddar-Käsesauce, rote Zwiebeln, Jalapeños</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Cole Slaw <span class="price">2,90 €</span></h3>
+                        <p data-i18n="ingColeSlaw">Hausgemachter Krautsalat</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleSideSalad">Kleiner Beilagensalat <span class="price">4,90 €</span></h3>
+                        <p data-i18n="ingSideSalad">Blattsalat, Gurke, Tomaten, Mais, Oliven, rote Zwiebeln</p>
+                    </div>
+                </div>
+            </article>
+
+            
+            <article id="snacks" class="menu-section" data-section="snacks">
+                <div class="section-heading">
+                    <span></span>
+                    <h2 data-i18n="catSnacks">Snacks</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleToast">Schinken-Käse-Toast <span class="price">4,90 €</span></h3>
+                        <p data-i18n="ingToast">Schinken, Mozzarella</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Hertz Snack Spezial <span class="price">6,90 €</span></h3>
+                        <p data-i18n="ingSnackSpezial">Rinderhackfleisch, Mozzarella, gebratene Paprika, Champignons</p>
+                    </div>
+                </div>
+            </article>
+
+            
+            <article id="croques" class="menu-section" data-section="croques">
+                <div class="section-heading">
+                    <span></span>
+                    <h2 data-i18n="catCroques">Croques</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card with-note">
+                        <h3>Crispy Chicken <span class="price">11,90 €</span></h3>
+                        <p data-i18n="ingCrispyChicken">Paniertes Hähnchen, Chesterkäse, Tomaten, Jalapeños, Eisbergsalat/Krautsalat</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Spicy Chicken <span class="price">11,90 €</span></h3>
+                        <p data-i18n="ingSpicyChicken">Würzig paniertes Hähnchen, Edamer, Tomaten, Eisbergsalat/Krautsalat</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Spezial Chicken <span class="price">12,90 €</span></h3>
+                        <p data-i18n="ingSpezialChicken">Paniertes Hähnchen, Salami, Chesterkäse, Jalapeños</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Pute Bacon <span class="price">10,90 €</span></h3>
+                        <p data-i18n="ingPuteBacon">Putenbrust, Bacon, Edamer, Tomaten</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleFrikadelle">Frikadelle <span class="price">10,90 €</span></h3>
+                        <p data-i18n="ingFrikadelle">Frikadelle, Edamer, Tomatensauce, Tomaten</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Meat Bombe <span class="price">14,90 €</span></h3>
+                        <p data-i18n="ingMissing">(Zutaten fehlen noch)</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleSausage">Tomatenwurst <span class="price">10,90 €</span></h3>
+                        <p data-i18n="ingSausage">Gebratene Wurst, Tomatensauce, Edamer, Tomaten</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleOmelet">Kräuter-Omelett <span class="price">11,90 €</span></h3>
+                        <p data-i18n="ingOmelet">Kräuter-Omelett, Gewürzgurken, Tomaten</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Cheese Paradise <span class="price">11,90 €</span></h3>
+                        <p data-i18n="ingMissing">(Zutaten fehlen noch)</p>
+                    </div>
+                </div>
+            </article>
+
+            
+            <article id="burger" class="menu-section" data-section="burger">
+                <div class="section-heading">
+                    <span></span>
+                    <h2 data-i18n="catBurger">Burger</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card with-note">
+                        <h3>Cheeseburger <span class="price">16,90 €</span></h3>
+                        <p data-i18n="ingCheeseburger">Angus-Patty, 3x Chesterkäse, Mozzarella, Mais, Oliven</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Mushroom Burger <span class="price">17,90 €</span></h3>
+                        <p data-i18n="ingMushroomBurger">Angus-Patty, Chesterkäse, Mozzarella, Champignons, Mais, Oliven</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Chicken Burger <span class="price">16,90 €</span></h3>
+                        <p data-i18n="ingChickenBurger">Paniertes Hähnchen, Chesterkäse, Mozzarella, Jalapeños, Mais, Oliven</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Bacon Burger <span class="price">17,90 €</span></h3>
+                        <p data-i18n="ingBaconBurger">Angus-Patty, Bacon, Chesterkäse, Mozzarella, Röstzwiebeln, Mais, Oliven</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Spezial Burger <span class="price">26,90 €</span></h3>
+                        <p data-i18n="ingSpezialBurger">Wagyu-Patty, Chesterkäse, Mozzarella, Champignons, Mais, Oliven</p>
+                    </div>
+                </div>
+            </article>
+
+            
+            <article id="salate" class="menu-section" data-section="salate">
+                <div class="section-heading">
+                    <span></span>
+                    <h2 data-i18n="catSalate">Salate</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleCaesar">Caesar Salat <span class="price">13,90 €</span></h3>
+                        <p data-i18n="ingCaesar">Gegrillte Hähnchenbrust, Romana-Salat, Cherrytomaten, Croutons, Grana Padano, Caesar-Dressing</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Salade Niçoise <span class="price">12,90 €</span></h3>
+                        <p data-i18n="ingNicoise">Thunfisch, gekochtes Ei, Blattsalat, Gurke, Tomaten, rote Zwiebeln, Kapern, Mais, Oliven</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleVendome">Vendôme Salat <span class="price">12,90 €</span></h3>
+                        <p data-i18n="ingVendome">Ziegenkäse, Blattsalat, Walnüsse, Tomaten, Gurke, rote Zwiebeln, Oliven</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleSchafskase">Schafskäse Salat <span class="price">12,90 €</span></h3>
+                        <p data-i18n="ingSchafskase">Schafskäse, Blattsalat, Tomaten, Gurke, Mais, Oliven, rote Zwiebeln</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleMixedSalad">Gemischter Salat <span class="price">10,90 €</span></h3>
+                        <p data-i18n="ingMixedSalad">Blattsalat, Tomaten, Gurke, Mais, Oliven, rote Zwiebeln</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleChefSalad">Chef Salat <span class="price">13,90 €</span></h3>
+                        <p data-i18n="ingChefSalad">Paniertes Hähnchen, Schafskäse, Blattsalat, Tomaten, Gurke, Mais, Oliven, rote Zwiebeln</p>
+                    </div>
+                </div>
+            </article>
+
+            
+            <article id="dessert" class="menu-section" data-section="dessert">
+                <div class="section-heading">
+                    <span></span>
+                    <h2 data-i18n="catDessert">Dessert</h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card with-note">
+                        <h3>Cheesecake <span class="price">6,90 €</span></h3>
+                        <p data-i18n="ingCheesecake">Cheesecake, Vanilleeis</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleSouffle">Schoko Soufflé <span class="price">6,90 €</span></h3>
+                        <p data-i18n="ingSouffle">Schokoladen-Soufflé, Vanilleeis</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Banana Dream <span class="price">6,90 €</span></h3>
+                        <p data-i18n="ingBananaDream">Crêpe, Nutella, Banane</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleApple">Apfelmus <span class="price">5,90 €</span></h3>
+                        <p data-i18n="ingApple">Apfelmus</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleCinnamon">Zimt & Zucker <span class="price">5,90 €</span></h3>
+                        <p data-i18n="ingCinnamon">Crêpe mit Zimt und Zucker</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Dubai Lovers <span class="price">7,90 €</span></h3>
+                        <p data-i18n="ingDubai">Crêpe mit Pistaziencreme</p>
+                    </div>
+                </div>
+            </article>
+
+            
+            <article id="dips" class="menu-section" data-section="dips">
+                <div class="section-heading">
+                    <span></span>
+                    <h2 data-i18n="catDips">Dips</h2>
+                </div>
+                <div class="menu-grid compact">
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleHerbDip">Kräuter <span class="price">1,90 €</span></h3>
+                        <p data-i18n="ingHerbDip">Kräuterdip</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleGarlicDip">Knoblauch <span class="price">1,90 €</span></h3>
+                        <p data-i18n="ingGarlicDip">Knoblauchdip</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3 data-i18n="titleChiliDip">Chili <span class="price">1,90 €</span></h3>
+                        <p data-i18n="ingChiliDip">Chilisauce</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Curry Mango <span class="price">2,50 €</span></h3>
+                        <p data-i18n="ingCurryMango">Curry-Mango-Sauce</p>
+                    </div>
+                    <div class="menu-card with-note">
+                        <h3>Cheddar <span class="price">2,50 €</span></h3>
+                        <p data-i18n="ingCheddarDip">Warme Cheddar-Käsesauce</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h3 data-i18n="footerHoursTitle">Working hours</h3>
+            <p data-i18n="footerHoursWeek">Monday - Thursday: 18:00 - 01:00</p>
+            <p data-i18n="footerHoursWeekend">Friday - Saturday: 18:00 - 03:00</p>
+            <p data-i18n="footerHoursSunday">Sunday: Closed</p>
+        </div>
+
+        <div class="footer-column">
+            <h3 data-i18n="footerContactTitle">Kontakt</h3>
+            <p><span data-i18n="footerPhone">Telefon:</span> <a href="tel:+31000000000">+31 00 000 0000</a></p>
+            <p><span data-i18n="footerEmail">E-Mail:</span> <a href="mailto:info@hertzecke.de">info@hertzecke.de</a></p>
+            <p><span data-i18n="footerAddress">Adresse:</span> <span
+                    data-i18n="footerAddressValue">Heinrich-Hertz-Straße 102</span></p>
+        </div>
+
+        <div class="footer-column">
+            <h3 data-i18n="footerLinksTitle">Links</h3>
+            <a href="https://www.instagram.com/hertzecke/?utm_source=ig_web_button_share_sheet" target="_blank"
+                rel="noopener noreferrer">Instagram</a>
+            <a href="https://wolt.com/de/deu?tld=de" data-i18n="footerWebsiteWolt">Order from Wolt</a>
+            <a href="https://www.lieferando.de/" data-i18n="footerWebsiteLieferando">Order from Lieferando</a>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                navHome: 'Home',
+                navDrinksMenu: 'Drinks Menu',
+                navFoodMenu: 'Food Menu',
+                navEvents: 'Events',
+                navContact: 'Contact us',
+
+                menuEyebrow: 'Hertz Ecke menu',
+                menuHeroTitle: 'Good drinks. Good food. Good vibes.',
+                menuHeroText: 'Explore our menu by category and jump smoothly to the section you want.',
+                menuHeroButton: 'View categories',
+
+                catSides: 'Sides',
+                catSnacks: 'Snacks',
+                catCroques: 'Croques',
+                catBurger: 'Burgers',
+                catSalate: 'Salads',
+                catDessert: 'Desserts',
+                catDips: 'Dips',
+
+                titleSideSalad: 'Small Side Salad <span class="price">4,90 €</span>',
+                titleToast: 'Ham & Cheese Toast <span class="price">4,90 €</span>',
+                titleFrikadelle: 'Meatball <span class="price">10,90 €</span>',
+                titleSausage: 'Tomato Sausage <span class="price">10,90 €</span>',
+                titleOmelet: 'Herb Omelet <span class="price">11,90 €</span>',
+                titleCaesar: 'Caesar Salad <span class="price">13,90 €</span>',
+                titleVendome: 'Vendôme Salad <span class="price">12,90 €</span>',
+                titleSchafskase: 'Feta Cheese Salad <span class="price">12,90 €</span>',
+                titleMixedSalad: 'Mixed Salad <span class="price">10,90 €</span>',
+                titleChefSalad: 'Chef Salad <span class="price">13,90 €</span>',
+                titleSouffle: 'Chocolate Soufflé <span class="price">6,90 €</span>',
+                titleApple: 'Applesauce <span class="price">5,90 €</span>',
+                titleCinnamon: 'Cinnamon & Sugar <span class="price">5,90 €</span>',
+                titleHerbDip: 'Herb <span class="price">1,90 €</span>',
+                titleGarlicDip: 'Garlic <span class="price">1,90 €</span>',
+                titleChiliDip: 'Chili <span class="price">1,90 €</span>',
+
+                
+                ingNachos: 'Tortilla nachos, hot cheddar cheese sauce',
+                ingNachosUp: 'Tortilla nachos, hot cheddar cheese sauce, red onions, jalapeños',
+                ingColeSlaw: 'Homemade coleslaw',
+                ingSideSalad: 'Lettuce, cucumber, tomatoes, corn, olives, red onions',
+                ingToast: 'Ham, mozzarella',
+                ingSnackSpezial: 'Minced beef, mozzarella, roasted peppers, mushrooms',
+                ingCrispyChicken: 'Breaded chicken, Chester cheese, tomatoes, jalapeños, iceberg lettuce/coleslaw',
+                ingSpicyChicken: 'Spicy breaded chicken, Edam cheese, tomatoes, iceberg lettuce/coleslaw',
+                ingSpezialChicken: 'Breaded chicken, salami, Chester cheese, jalapeños',
+                ingPuteBacon: 'Turkey breast, bacon, Edam cheese, tomatoes',
+                ingFrikadelle: 'Meatball, Edam cheese, tomato sauce, tomatoes',
+                ingMissing: '(Ingredients pending)',
+                ingSausage: 'Fried sausage, tomato sauce, Edam cheese, tomatoes',
+                ingOmelet: 'Herb omelet, pickles, tomatoes',
+                ingCheeseburger: 'Angus patty, 3x Chester cheese, mozzarella, corn, olives',
+                ingMushroomBurger: 'Angus patty, Chester cheese, mozzarella, mushrooms, corn, olives',
+                ingChickenBurger: 'Breaded chicken, Chester cheese, mozzarella, jalapeños, corn, olives',
+                ingBaconBurger: 'Angus patty, bacon, Chester cheese, mozzarella, fried onions, corn, olives',
+                ingSpezialBurger: 'Wagyu patty, Chester cheese, mozzarella, mushrooms, corn, olives',
+                ingCaesar: 'Grilled chicken breast, Romaine lettuce, cherry tomatoes, croutons, Grana Padano, Caesar dressing',
+                ingNicoise: 'Tuna, boiled egg, lettuce, cucumber, tomatoes, red onions, capers, corn, olives',
+                ingVendome: 'Goat cheese, lettuce, walnuts, tomatoes, cucumber, red onions, olives',
+                ingSchafskase: 'Feta cheese, lettuce, tomatoes, cucumber, corn, olives, red onions',
+                ingMixedSalad: 'Lettuce, tomatoes, cucumber, corn, olives, red onions',
+                ingChefSalad: 'Breaded chicken, feta cheese, lettuce, tomatoes, cucumber, corn, olives, red onions',
+                ingCheesecake: 'Cheesecake, vanilla ice cream',
+                ingSouffle: 'Chocolate soufflé, vanilla ice cream',
+                ingBananaDream: 'Crêpe, Nutella, banana',
+                ingApple: 'Applesauce',
+                ingCinnamon: 'Crêpe with cinnamon and sugar',
+                ingDubai: 'Crêpe with pistachio cream',
+                ingHerbDip: 'Herb dip',
+                ingGarlicDip: 'Garlic dip',
+                ingChiliDip: 'Chili sauce',
+                ingCurryMango: 'Curry mango sauce',
+                ingCheddarDip: 'Warm cheddar cheese sauce',
+
+                footerHoursTitle: 'Working hours',
+                footerHoursWeek: 'Monday - Thursday: 18:00 - 01:00',
+                footerHoursWeekend: 'Friday - Saturday: 18:00 - 03:00',
+                footerHoursSunday: 'Sunday: Closed',
+                footerContactTitle: 'Contact',
+                footerPhone: 'Phone:',
+                footerEmail: 'E-Mail:',
+                footerAddress: 'Address:',
+                footerAddressValue: 'Heinrich-Hertz-Straße 102',
+                footerLinksTitle: 'Links',
+                footerWebsiteWolt: 'Order from Wolt',
+                footerWebsiteLieferando: 'Order from Lieferando'
+            },
+            de: {
+                navHome: 'Startseite',
+                navDrinksMenu: 'Getränkemenü',
+                navFoodMenu: 'Speisemenü',
+                navEvents: 'Veranstaltungen',
+                navContact: 'Kontakt',
+
+                menuEyebrow: 'Speisekarte von Hertz Ecke',
+                menuHeroTitle: 'Gute Getränke. Gutes Essen. Gute Stimmung.',
+                menuHeroText: 'Entdecken Sie unsere Speisen nach Kategorien und springen Sie direkt zum gewünschten Bereich.',
+                menuHeroButton: 'Kategorien ansehen',
+
+                catSides: 'Sides',
+                catSnacks: 'Snacks',
+                catCroques: 'Croques',
+                catBurger: 'Burger',
+                catSalate: 'Salate',
+                catDessert: 'Dessert',
+                catDips: 'Dips',
+
+                
+                titleSideSalad: 'Kleiner Beilagensalat <span class="price">4,90 €</span>',
+                titleToast: 'Schinken-Käse-Toast <span class="price">4,90 €</span>',
+                titleFrikadelle: 'Frikadelle <span class="price">10,90 €</span>',
+                titleSausage: 'Tomatenwurst <span class="price">10,90 €</span>',
+                titleOmelet: 'Kräuter-Omelett <span class="price">11,90 €</span>',
+                titleCaesar: 'Caesar Salat <span class="price">13,90 €</span>',
+                titleVendome: 'Vendôme Salat <span class="price">12,90 €</span>',
+                titleSchafskase: 'Schafskäse Salat <span class="price">12,90 €</span>',
+                titleMixedSalad: 'Gemischter Salat <span class="price">10,90 €</span>',
+                titleChefSalad: 'Chef Salat <span class="price">13,90 €</span>',
+                titleSouffle: 'Schoko Soufflé <span class="price">6,90 €</span>',
+                titleApple: 'Apfelmus <span class="price">5,90 €</span>',
+                titleCinnamon: 'Zimt & Zucker <span class="price">5,90 €</span>',
+                titleHerbDip: 'Kräuter <span class="price">1,90 €</span>',
+                titleGarlicDip: 'Knoblauch <span class="price">1,90 €</span>',
+                titleChiliDip: 'Chili <span class="price">1,90 €</span>',
+
+                
+                ingNachos: 'Tortilla-Nachos, heiße Cheddar-Käsesauce',
+                ingNachosUp: 'Tortilla-Nachos, heiße Cheddar-Käsesauce, rote Zwiebeln, Jalapeños',
+                ingColeSlaw: 'Hausgemachter Krautsalat',
+                ingSideSalad: 'Blattsalat, Gurke, Tomaten, Mais, Oliven, rote Zwiebeln',
+                ingToast: 'Schinken, Mozzarella',
+                ingSnackSpezial: 'Rinderhackfleisch, Mozzarella, gebratene Paprika, Champignons',
+                ingCrispyChicken: 'Paniertes Hähnchen, Chesterkäse, Tomaten, Jalapeños, Eisbergsalat/Krautsalat',
+                ingSpicyChicken: 'Würzig paniertes Hähnchen, Edamer, Tomaten, Eisbergsalat/Krautsalat',
+                ingSpezialChicken: 'Paniertes Hähnchen, Salami, Chesterkäse, Jalapeños',
+                ingPuteBacon: 'Putenbrust, Bacon, Edamer, Tomaten',
+                ingFrikadelle: 'Frikadelle, Edamer, Tomatensauce, Tomaten',
+                ingMissing: '(Zutaten fehlen noch)',
+                ingSausage: 'Gebratene Wurst, Tomatensauce, Edamer, Tomaten',
+                ingOmelet: 'Kräuter-Omelett, Gewürzgurken, Tomaten',
+                ingCheeseburger: 'Angus-Patty, 3x Chesterkäse, Mozzarella, Mais, Oliven',
+                ingMushroomBurger: 'Angus-Patty, Chesterkäse, Mozzarella, Champignons, Mais, Oliven',
+                ingChickenBurger: 'Paniertes Hähnchen, Chesterkäse, Mozzarella, Jalapeños, Mais, Oliven',
+                ingBaconBurger: 'Angus-Patty, Bacon, Chesterkäse, Mozzarella, Röstzwiebeln, Mais, Oliven',
+                ingSpezialBurger: 'Wagyu-Patty, Chesterkäse, Mozzarella, Champignons, Mais, Oliven',
+                ingCaesar: 'Gegrillte Hähnchenbrust, Romana-Salat, Cherrytomaten, Croutons, Grana Padano, Caesar-Dressing',
+                ingNicoise: 'Thunfisch, gekochtes Ei, Blattsalat, Gurke, Tomaten, rote Zwiebeln, Kapern, Mais, Oliven',
+                ingVendome: 'Ziegenkäse, Blattsalat, Walnüsse, Tomaten, Gurke, rote Zwiebeln, Oliven',
+                ingSchafskase: 'Schafskäse, Blattsalat, Tomaten, Gurke, Mais, Oliven, rote Zwiebeln',
+                ingMixedSalad: 'Blattsalat, Tomaten, Gurke, Mais, Oliven, rote Zwiebeln',
+                ingChefSalad: 'Paniertes Hähnchen, Schafskäse, Blattsalat, Tomaten, Gurke, Mais, Oliven, rote Zwiebeln',
+                ingCheesecake: 'Cheesecake, Vanilleeis',
+                ingSouffle: 'Schokoladen-Soufflé, Vanilleeis',
+                ingBananaDream: 'Crêpe, Nutella, Banane',
+                ingApple: 'Apfelmus',
+                ingCinnamon: 'Crêpe mit Zimt und Zucker',
+                ingDubai: 'Crêpe mit Pistaziencreme',
+                ingHerbDip: 'Kräuterdip',
+                ingGarlicDip: 'Knoblauchdip',
+                ingChiliDip: 'Chilisauce',
+                ingCurryMango: 'Curry-Mango-Sauce',
+                ingCheddarDip: 'Warme Cheddar-Käsesauce',
+
+                footerHoursTitle: 'Öffnungszeiten',
+                footerHoursWeek: 'Montag – Donnerstag: 18:00 – 01:00',
+                footerHoursWeekend: 'Freitag – Samstag: 18:00 – 03:00',
+                footerHoursSunday: 'Sonntag: Geschlossen',
+
+                footerContactTitle: 'Kontakt',
+                footerPhone: 'Telefon:',
+                footerEmail: 'E-Mail:',
+                footerAddress: 'Adresse:',
+                footerAddressValue: 'Heinrich-Hertz-Straße 102',
+
+                footerLinksTitle: 'Links',
+                footerWebsiteWolt: 'Bei Wolt bestellen',
+                footerWebsiteLieferando: 'Bei Lieferando bestellen'
+            }
+        };
+
+        const languageSelect = document.getElementById('languageSelect');
+        const translatableElements = document.querySelectorAll('[data-i18n]');
+        const categoryButtons = document.querySelectorAll('.category-button');
+        const menuSections = document.querySelectorAll('.menu-section');
+
+        function setLanguage(language) {
+            translatableElements.forEach((element) => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[language][key]) {
+                    element.innerHTML = translations[language][key];
+                }
+            });
+            document.documentElement.lang = language;
+            localStorage.setItem('hertzEckeLanguage', language);
+        }
+
+        function setActiveCategory(sectionId) {
+            categoryButtons.forEach((button) => {
+                button.classList.toggle('active', button.dataset.target === sectionId);
+            });
+        }
+
+        languageSelect.addEventListener('change', (event) => setLanguage(event.target.value));
+
+        categoryButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const target = document.getElementById(button.dataset.target);
+                if (!target) return;
+
+                const headerOffset = 170;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+
+                setActiveCategory(button.dataset.target);
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveCategory(entry.target.id);
+                }
+            });
+        }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+
+        menuSections.forEach((section) => observer.observe(section));
+
+        const savedLanguage = localStorage.getItem('hertzEckeLanguage') || 'de';
+        languageSelect.value = savedLanguage;
+        setLanguage(savedLanguage);
+    </script>
+</body>
+
+</html>
