@@ -303,6 +303,7 @@ a {
 
 .section-heading {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 14px;
     margin-bottom: 24px;
@@ -314,6 +315,22 @@ a {
     border-radius: 999px;
     background: var(--cyan);
     box-shadow: 0 0 14px rgba(72, 247, 255, 0.82);
+}
+
+.category-image {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 0 16px var(--cyan-soft);
+}
+
+
+.category-image:not([src]),
+.category-image[src=""] {
+    display: none;
 }
 
 .section-heading h2 {
@@ -379,7 +396,7 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Hide the image slot cleanly until a real src is set (empty src or broken image) */
+
 .menu-card-img:not([src]),
 .menu-card-img[src=""] {
     display: none;
@@ -421,7 +438,7 @@ a {
     opacity: 0.5;
     position: relative;
     pointer-events: none;
-    /* Prevents clicking/interacting if needed */
+    
 }
 
 .sold-out-badge {
@@ -429,7 +446,7 @@ a {
     top: 15px;
     right: 15px;
     background-color: #d9534f;
-    /* Red warning color */
+    
     color: white;
     padding: 4px 10px;
     font-size: 0.85rem;
@@ -440,7 +457,7 @@ a {
 }
 
 
-/* Container to space out item title and prices */
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -449,7 +466,7 @@ a {
     width: 100%;
 }
 
-/* Make h3 take remaining space without stretching flex box */
+
 .card-header h3 {
     margin: 0;
     color: var(--white);
