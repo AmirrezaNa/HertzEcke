@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz Ecke | Cart</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <main>
+        <section class="cart-section">
+            <h1>Ihre Bestellung</h1>
+            <div id="cartItems"></div>
+            <p>Gesamt: <span id="cartTotal">0,00 €</span></p>
+
+            <form id="checkoutForm">
+                <label>Name<br><input type="text" id="customerName" required></label><br>
+                <label>Telefonnummer<br><input type="tel" id="customerPhone" required></label><br>
+                <button type="submit">Bestellen</button>
+            </form>
+            <p id="checkoutStatus"></p>
+        </section>
+    </main>
+
+    <script src="cartLogic.js"></script>
+    <script src="Checkout.js"></script>
+</body>
+</html>

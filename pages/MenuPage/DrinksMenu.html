@@ -1,28 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hertz Ecke | Menu</title>
-    <link rel="shortcut icon" href="../../images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="Menu.css">
+    <link rel="shortcut icon" href="../../images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="Menu.css" />
 </head>
 
 <body>
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
             <a class="logo-link" href="../../index.html" aria-label="Hertz Ecke home">
-                <img src="../../images/logo.jpg" alt="Hertz Ecke logo" class="logo">
+                <img src="../../images/logo.jpg" alt="Hertz Ecke logo" class="logo" />
                 <span class="brand-name">Hertz Ecke</span>
             </a>
 
             <ul class="nav-links">
                 <li><a href="../../index.html" data-i18n="navHome">Home</a></li>
-                <li><a href="../MenuPage/DrinksMenu.html" data-i18n="navDrinksMenu">Getränkemenü</a></li>
-                <li><a href="../MenuPage/FoodMenu.html" data-i18n="navFoodMenu">Speisemenü</a></li>
-                <li><a href="../EventsPage/Events.html" data-i18n="navEvents">Events</a></li>
-                <li><a href="../ContactUsPage/ContactUs.html" data-i18n="navContact">Contact us</a></li>
+                <li>
+                    <a href="../MenuPage/DrinksMenu.html" data-i18n="navDrinksMenu">Getränkemenü</a>
+                </li>
+                <li>
+                    <a href="../MenuPage/FoodMenu.html" data-i18n="navFoodMenu">Speisemenü</a>
+                </li>
+                <li>
+                    <a href="../EventsPage/Events.html" data-i18n="navEvents">Events</a>
+                </li>
+                <li>
+                    <a href="../ContactUsPage/ContactUs.html" data-i18n="navContact">Contact us</a>
+                </li>
             </ul>
 
             <div class="nav-actions">
@@ -33,6 +41,11 @@
                         <path
                             d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.75 2.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25Zm0 2A2.75 2.75 0 1 0 12 14.75 2.75 2.75 0 0 0 12 9.25Z" />
                     </svg>
+                </a>
+
+                <a href="../Checkout/checkout.html" class="cart-link" aria-label="Cart">
+                    🛒
+                    <span id="cartBadge" class="cart-badge" style="display: none">0</span>
                 </a>
 
                 <select id="languageSelect" class="language-select" aria-label="Choose language">
@@ -49,259 +62,60 @@
             <div class="menu-hero-content">
                 <p class="eyebrow" data-i18n="menuEyebrow">Hertz Ecke menu</p>
                 <h1 data-i18n="menuHeroTitle">Good drinks. Good food. Good vibes.</h1>
-                <p data-i18n="menuHeroText">Explore our drinks by category and jump smoothly to the section you want.
+                <p data-i18n="menuHeroText">
+                    Explore our drinks by category and jump smoothly to the section you
+                    want.
                 </p>
                 <a href="#menuCategories" class="primary-button" data-i18n="menuHeroButton">View categories</a>
             </div>
         </section>
 
         <section id="menuCategories" class="category-control" aria-label="Menu category controls">
-            <button class="category-button" type="button" data-target="soft" data-i18n="catSoft">Soft drinks</button>
-            <button class="category-button" type="button" data-target="lemonades"
-                data-i18n="catLemonades">Lemonades</button>
-            <button class="category-button" type="button" data-target="icedtea" data-i18n="catIcedTea">Iced Tea</button>
-            <button class="category-button active" type="button" data-target="sparkling"
-                data-i18n="catSparkling">Sparkling & Aperitif</button>
-            <button class="category-button" type="button" data-target="wine" data-i18n="catWine">Wine</button>
-            <button class="category-button" type="button" data-target="beer" data-i18n="catBeer">Beer</button>
-            <button class="category-button" type="button" data-target="caribbean" data-i18n="catCaribbean">Caribbean &
-                Fancy</button>
-            <button class="category-button" type="button" data-target="modern"
-                data-i18n="catModern">ModernClassics</button>
-            <button class="category-button" type="button" data-target="sours" data-i18n="catSours">Sours &
-                Fizzes</button>
-            <button class="category-button" type="button" data-target="driver" data-i18n="catDriver">Alcohol-free
-                cocktails</button>
-            <button class="category-button" type="button" data-target="spirits" data-i18n="catSpirits">Spirits</button>
-            <button class="category-button" type="button" data-target="hot" data-i18n="catHot">Hot drinks</button>
+            <button class="category-button" type="button" data-target="soft" data-i18n="catSoft">
+                Soft drinks
+            </button>
+            <button class="category-button" type="button" data-target="lemonades" data-i18n="catLemonades">
+                Lemonades
+            </button>
+            <button class="category-button" type="button" data-target="icedtea" data-i18n="catIcedTea">
+                Iced Tea
+            </button>
+            <button class="category-button active" type="button" data-target="sparkling" data-i18n="catSparkling">
+                Sparkling & Aperitif
+            </button>
+            <button class="category-button" type="button" data-target="wine" data-i18n="catWine">
+                Wine
+            </button>
+            <button class="category-button" type="button" data-target="beer" data-i18n="catBeer">
+                Beer
+            </button>
+            <button class="category-button" type="button" data-target="caribbean" data-i18n="catCaribbean">
+                Caribbean & Fancy
+            </button>
+            <button class="category-button" type="button" data-target="modern" data-i18n="catModern">
+                ModernClassics
+            </button>
+            <button class="category-button" type="button" data-target="sours" data-i18n="catSours">
+                Sours & Fizzes
+            </button>
+            <button class="category-button" type="button" data-target="driver" data-i18n="catDriver">
+                Alcohol-free cocktails
+            </button>
+            <button class="category-button" type="button" data-target="spirits" data-i18n="catSpirits">
+                Spirits
+            </button>
+            <button class="category-button" type="button" data-target="hot" data-i18n="catHot">
+                Hot drinks
+            </button>
         </section>
 
         <section class="menu-board" aria-label="Menu items">
-
             <article id="soft" class="menu-section" data-section="soft">
                 <div class="section-heading">
-                    <h2 data-i18n="catSoft">Soft drinksssssssssssss</h2>
-                    <h1>hellloooooo</h1>
+                    <h2 data-i18n="catSoft">Soft drinks</h2>
                 </div>
 
-                <div class="menu-grid compact">
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Coca-Cola ( Flasche ) <span>0.2L - 2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Coca-Cola Zero ( Flasche ) <span>0.2L - 2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Fanta <span>0.2L - 2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Sprite <span>0.2L - 2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Mezzo Mix <span>0.2L - 2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Tonic Water <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Ginger Ale <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Bitter Lemon <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Red Bull <span class="price">4,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                            <h3>Vio Still</h3>
-                            <div class="price-list">
-                                <span>0.2 - 2,90 €</span>
-                                <span>0.7 - 4,90 €</span>
-                            </div>
-                        </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                            <h3>Vio Sprudel</h3>
-                            <div class="price-list">
-                                <span>0.2 - 2,90 €</span>
-                                <span>0.7 - 4,90 €</span>
-                            </div>
-                        </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>O-Saft (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>O-Saft-Schorle (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Apfelsaft (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Apfelsaft-Schorle (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Mango (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Mango-Schorle (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Maracuja (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Maracuja-Schorle (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Ananas (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Ananas-Schorle (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Cranberry (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Cranberry-Schorle (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Rhabarber (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Rhabarber-Schorle (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Banane (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Bananen-Schorle (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Kirsch (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Kirsch-Schorle (Klindworth) <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                </div>
+                <div class="menu-grid compact"></div>
             </article>
 
             <article id="lemonades" class="menu-section" data-section="lemonades">
@@ -309,73 +123,7 @@
                     <h2 data-i18n="catLemonades">Limonaden</h2>
                 </div>
 
-                <div class="menu-grid">
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Granatapfel-Minze <span class="price">3,90 €</span></h3>
-                        <p>Granatapfelsirup · frischer Limettensaft · Minzblätter · Soda Water</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Minze-Holunder <span class="price">3,90 €</span></h3>
-                        <p>Holunderblütensirup · frischer Limettensaft · Minzblätter · Soda Water</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Blaubeer <span class="price">3,90 €</span></h3>
-                        <p>Blaubeersirup · frischer Zitronensaft · Soda Water</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Apfel-Rhababer <span class="price">3,90 €</span></h3>
-                        <p>Apfelsaft · Rhabarbersirup · frischer Zitronensaft · Soda Water</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Zitrone <span class="price">3,90 €</span></h3>
-                        <p>frischer Zitronensaft · Zuckersirup · Soda Water</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Fruity Lemo <span class="price">3,90 €</span></h3>
-                        <p>Mangopüree · Maracujapüree · frischer Limettensaft · Soda Water</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Tropical Lemo <span class="price">3,90 €</span></h3>
-                        <p>Mangopüree · Ananassaft · Maracujapüree · Limettensaft · Soda Water</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Mango Homemade <span class="price">3,90 €</span></h3>
-                        <p>Mangopüree · Limettensaft · Sprudelwasser</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                </div>
+                <div class="menu-grid"></div>
             </article>
 
             <article id="icedtea" class="menu-section" data-section="icedtea">
@@ -383,105 +131,15 @@
                     <h2 data-i18n="catIcedTea">Iced Tea</h2>
                 </div>
 
-                <div class="menu-grid">
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Cucumber Lime <span class="price">3,90 €</span></h3>
-                        <p data-i18n="icedTea1">green tea · lime juice · sugar syrup · cucumber slices</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Mango Passion <span class="price">3,90 €</span></h3>
-                        <p data-i18n="icedTea2">black tea · mango purée · passion fruit purée · lime juice</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Peach Orange <span class="price">3,90 €</span></h3>
-                        <p data-i18n="icedTea3">black tea · peach syrup · orange juice · lemon juice</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                </div>
+                <div class="menu-grid"></div>
             </article>
-
 
             <article id="sparkling" class="menu-section" data-section="sparkling">
                 <div class="section-heading">
                     <h2 data-i18n="catSparkling">Sparkling & Aperitif</h2>
                 </div>
-                <div class="menu-grid">
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                            <h3>Crémant Rosé</h3>
-                            <div class="price-list">
-                                <span>0.1 - 5,90 €</span>
-                                <span>0.7 - 36,90 €</span>
-                            </div>
-                        </div>
-                        </div>
-                        <img src="../../images/crement_rose.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Sekt <span class="price">0.1 - 7,90 €</span></h3>
-                        </div>
-                        <img src="../../images/sekt.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Aperol Spritz <span class="price">7,90 €</span></h3>
-                        </div>
-                        <img src="../../images/aperol_spritz.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Limoncello Spritz <span class="price">7,90 €</span></h3>
-                        </div>
-                        <img src="../../images/limoncello.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Lillet Wildberry <span class="price">7,90 €</span></h3>
-                        </div>
-                        <img src="../../images/lillet.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Pornstar Spritz <span class="price">8,50 €</span></h3>
-                        </div>
-                        <img src="../../images/pornstar_spritz.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Campari Spritz <span class="price">7,90 €</span></h3>
-                        </div>
-                        <img src="../../images/campari_spritz.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Moet Brut <span class="price">87,90 €</span></h3>
-                        </div>
-                        <img src="../../images/moet_brut.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Moet Ice <span class="price">96,90 €</span></h3>
-                        </div>
-                        <img src="../../images/moet_ice.jpg" alt="" class="menu-card-img">
-                    </div>
-
-                </div>
+                <div class="menu-grid"></div>
             </article>
-
 
             <article id="wine" class="menu-section" data-section="wine">
                 <div class="section-heading">
@@ -489,107 +147,16 @@
                 </div>
                 <div class="sub-category">
                     <h3 data-i18n="whiteWine">White wine</h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                                <h3>Grauburgunder</h3>
-                                <div class="price-list">
-                                    <span>0.2 - 6,90 €</span>
-                                    <span>0.75 - 19,90 €</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                                <h3>Metzger Riesling</h3>
-                                <div class="price-list">
-                                    <span>0.2 - 6,90 €</span>
-                                    <span>0.7 - 19,90 €</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div>
-                                <h3>Sauv<span>0.7 - 23,90 €</span></h3>
-                            </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div>
-                                <h3>Sauvignon Blanc <span>0.2 - 6,90 €</span></h3>
-                            </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                                <h3>Riesling</h3>
-                                <div class="price-list">
-                                    <span>0.2 - 6,90 €</span>
-                                    <span>0.75 - 19,90 €</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
                 <div class="sub-category">
                     <h3 data-i18n="roseWine">Rosé wine</h3>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                            <h3>Belrose Mediterranee Rose</h3>
-                            <div class="price-list">
-                                <span>0.2 - 8,90 €</span>
-                                <span>0.75 - 24,90 €</span>
-                            </div>
-                        </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
                 </div>
                 <div class="sub-category">
                     <h3 data-i18n="redWine">Red wine</h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                                <h3>Louis Franvin</h3>
-                                <div class="price-list">
-                                    <span>0.2 - 4,90 €</span>
-                                    <span>0.75 - 14,90 €</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                                <h3>Penfold Koonunga Hill Shiraz</h3>
-                                <div class="price-list">
-                                    <span>0.2 - 7,90 €</span>
-                                    <span>0.75 - 31,90 €</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
             </article>
-
 
             <article id="beer" class="menu-section" data-section="beer">
                 <div class="section-heading">
@@ -597,686 +164,99 @@
                 </div>
                 <div class="sub-category">
                     <h3 data-i18n="draftBeer">On tap</h3>
-                    <div class="menu-grid compact">
-
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                                <h3>Pils : Königpilsner</h3>
-                                <div class="price-list">
-                                    <span>0.3L - 3,90 €</span>
-                                    <span>0.5L - 4,90 €</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <div class="card-header">
-                                <h3>Helles : Weihenstephan</h3>
-                                <div class="price-list">
-                                    <span>0.3L - 3,90 €</span>
-                                    <span>0.5L - 4,90 €</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
                 <div class="sub-category">
                     <h3 data-i18n="bottleBeer">Bottled beer</h3>
-                    <div class="menu-grid compact">
-
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Weizenbiar flasche : weihenstephan <span>0.5L - €4.90</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Weizen Alcohol-Frei <span>0.5L - €4.90</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Desperados <span>€5.90</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>KöPi Alcohol-Frei <span>€3.90</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
             </article>
-
 
             <article id="caribbean" class="menu-section" data-section="caribbean">
                 <div class="section-heading">
                     <h2 data-i18n="catCaribbean">Caribbean & Fancy Cocktails</h2>
                 </div>
-                <div class="menu-grid">
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Mojito <span class="price">10,90 €</span></h3>
-                        <p>Havana Club 3 · Rohrzucker · Limette · Minzblätter · Soda Water · Crushed-Eis</p>
-                        </div>
-                        <img src="../../images/mojito.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Mango Mojito <span class="price">10,90 €</span></h3>
-                        <p>Havana Club 3 · Mangopüree · Rohrzucker · Limette · Minzblätter · Soda Water · Crushed-Eis
-                        </p>
-                        </div>
-                        <img src="../../images/mango_mojito.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Caipirinha <span class="price">10,90 €</span></h3>
-                        <p>Cachaça · Limette · Rohrzucker · Crushed-Eis</p>
-                        </div>
-                        <img src="../../images/caipirinha.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Strawberry Caipirinha <span class="price">10,90 €</span></h3>
-                        <p>Cachaça · Erdbeeren · Limette · Rohrzucker · Crushed-Eis</p>
-                        </div>
-                        <img src="../../images/strawberry_caipirinha.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Piña Colada <span class="price">10,90 €</span></h3>
-                        <p>Weißer Rum · Kokoscreme · Sahne · Ananassaft · Crushed-Eis</p>
-                        </div>
-                        <img src="../../images/pina_colada.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Sex on the Beach <span class="price">10,90 €</span></h3>
-                        <p>Vodka · Pfirsichlikör · Grenadine · Orangensaft · Cranberrysaft · Crushed-Eis</p>
-                        </div>
-                        <img src="../../images/sex_on_the_beach.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Gin Basil Smash <span class="price">10,90 €</span></h3>
-                        <p>Gin · Zuckersirup · Frischer Zitronensaft · Frische Basilikumblätter · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/gin_basil_smash.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Swimming Pool <span class="price">10,90 €</span></h3>
-                        <p>Vodka · Weißer Rum · Blue Curaçao · Kokoscreme · Ananassaft · Crushed-Eis</p>
-                        </div>
-                        <img src="../../images/swimming_pool.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Frozen Strawberry Margarita <span class="price">10,90 €</span></h3>
-                        <p>Tequila Blanco · Cointreau · Gefrorene Erdbeeren · Frischer Limettensaft · Crushed Ice</p>
-                        </div>
-                        <img src="../../images/frozen_strawberry_margarita.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Mai Tai <span class="price">11,90 €</span></h3>
-                        <p>Dunkler Rum · Weißer Rum · Triple Sec · Mandelsirup · Frischer Limettensaft · Große Eiswürfel
-                        </p>
-                        </div>
-                        <img src="../../images/mai_tai.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Lynchburg Lemonade <span class="price">10,90 €</span></h3>
-                        <p>Jack Daniel's · Triple Sec · Frischer Zitronensaft · Sprite · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/lynchburg_lemonade.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Moscow Mule <span class="price">10,90 €</span></h3>
-                        <p>Vodka · Frischer Limettensaft · Ginger Beer · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/moscow_mule.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Tropical Hertz <span class="price">10,90 €</span></h3>
-                        <p>Rum · Maracujasaft · Limettensaft · Ananassaft · Sahne</p>
-                        </div>
-                        <img src="../../images/tropical_hertz.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Hertz Solero <span class="price">10,90 €</span></h3>
-                        <p>Vodka · Maracujasaft · Vanillesirup · Licor 43 · Orangensaft</p>
-                        </div>
-                        <img src="../../images/hertz_solero.jpg" alt="" class="menu-card-img">
-                    </div>
-                </div>
+                <div class="menu-grid"></div>
             </article>
-
-
 
             <article id="modern" class="menu-section" data-section="modern">
                 <div class="section-heading">
                     <h2 data-i18n="catModern">Modern Classics</h2>
                 </div>
-                <div class="menu-grid">
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Margarita <span class="price">10,90 €</span></h3>
-                        <p>Tequila Blanco · Cointreau (Triple Sec) · Frischer Limettensaft · Ohne Eis</p>
-                        </div>
-                        <img src="../../images/margarita.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Golden Margarita <span class="price">10,90 €</span></h3>
-                        <p>Patrón Gold · Cointreau · Frischer Limettensaft · Zuckersirup · Ohne Eis</p>
-                        </div>
-                        <img src="../../images/golden_margarita.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Espresso Martini <span class="price">10,90 €</span></h3>
-                        <p>Vodka · Kaffeelikör · Frischer Espresso · Zuckersirup · Ohne Eis</p>
-                        </div>
-                        <img src="../../images/espresso_martini.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Pornstar Martini <span class="price">11,90 €</span></h3>
-                        <p>Vodka · Passoã · Licor 43 · Vanillesirup · Maracujapüree · Prosecco (Shot) · Ohne Eis</p>
-                        </div>
-                        <img src="../../images/pornstar_martini.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Cosmopolitan <span class="price">10,90 €</span></h3>
-                        <p>Vodka · Cointreau · Frischer Limettensaft · Cranberrysaft · Ohne Eis</p>
-                        </div>
-                        <img src="../../images/cosmopolitan.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Carajillo 43 <span class="price">10,90 €</span></h3>
-                        <p>Licor 43 · Frischer Espresso · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/carajillo43.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Negroni <span class="price">10,90 €</span></h3>
-                        <p>Gin · Campari · Martini Rosso · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/negroni.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Daiquiri <span class="price">10,90 €</span></h3>
-                        <p>Weißer Rum · Frischer Limettensaft · Zuckersirup · Zuckerrand · Ohne Eis</p>
-                        </div>
-                        <img src="../../images/daiquiri.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Old Fashioned <span class="price">10,90 €</span></h3>
-                        <p>Bourbon Whiskey · Zuckersirup · Angostura Bitters · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/old_fashioned.jpg" alt="" class="menu-card-img">
-                    </div>
-                </div>
+                <div class="menu-grid"></div>
             </article>
 
             <article id="sours" class="menu-section" data-section="sours">
                 <div class="section-heading">
                     <h2 data-i18n="catSours">Sours & Fizzes</h2>
                 </div>
-                <div class="menu-grid">
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Whiskey Sour <span class="price">10,90 €</span></h3>
-                        <p>Bourbon Whiskey · Zuckersirup · Frischer Zitronensaft · Angostura Bitters · Große Eiswürfel
-                        </p>
-                        </div>
-                        <img src="../../images/whiskey_sour.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Aperol Sour <span class="price">9,90 €</span></h3>
-                        <p>Aperol · Zuckersirup · Frischer Zitronensaft · Orangensaft · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/aperol_sour.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Pisco Sour <span class="price">10,90 €</span></h3>
-                        <p>Pisco · Zuckersirup · Frischer Limettensaft · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/pisco_sour.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Frangelico Sour <span class="price">10,90 €</span></h3>
-                        <p>Frangelico · Zuckersirup · Frischer Zitronensaft · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/frangelico_sour.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Gin Fizz <span class="price">9,90 €</span></h3>
-                        <p>Gin · Zuckersirup · Frischer Zitronensaft · Soda Water · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/gin_fizz.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Melon Fizz <span class="price">10,90 €</span></h3>
-                        <p>Gin · Melonenlikör · Frischer Limettensaft · Soda Water · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/melon_fizz.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Rhabarber Fizz <span class="price">10,90 €</span></h3>
-                        <p>Gin · Rhabarbersirup · Frischer Zitronensaft · Soda Water · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/rhabarber_fizz.jpg" alt="" class="menu-card-img">
-                    </div>
-                </div>
+                <div class="menu-grid"></div>
             </article>
-
 
             <article id="driver" class="menu-section" data-section="driver">
                 <div class="section-heading">
                     <h2 data-i18n="catDriver">Alcohol-free cocktails</h2>
                 </div>
-                <div class="menu-grid">
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Virgin Mojito <span class="price">7,90 €</span></h3>
-                        <p>Rohrzucker · Limette · Minzblätter · Ginger Ale · Crushed-Eis</p>
-                        </div>
-                        <img src="../../images/virgin_mojito.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Virgin Fresh <span class="price">7,90 €</span></h3>
-                        <p>Maracujasaft · White Peach · Frischer Limettensaft · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/virgin_fresh.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Virgin Colada <span class="price">7,90 €</span></h3>
-                        <p>Kokoscreme · Kokossirup · Ananassaft · Crushed-Eis</p>
-                        </div>
-                        <img src="../../images/virgin_colada.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Cool Mango <span class="price">7,90 €</span></h3>
-                        <p>Mangopüree · Orangensaft · Frischer Limettensaft · Frische Minze · Große Eiswürfel</p>
-                        </div>
-                        <img src="../../images/cool_mango.jpg" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card with-note">
-                        <div class="menu-card-content">
-                            <h3>Hertz Cooler <span class="price">7,90 €</span></h3>
-                        <p>Limettensaft · Kirschsaft · Ginger Ale</p>
-                        </div>
-                        <img src="../../images/hertz_cooler.jpg" alt="" class="menu-card-img">
-                    </div>
-                </div>
+                <div class="menu-grid"></div>
             </article>
-
 
             <article id="spirits" class="menu-section" data-section="spirits">
                 <div class="section-heading">
                     <h2 data-i18n="catSpirits">Spirits</h2>
                 </div>
-                
+
                 <div class="sub-category">
                     <h3>Rum <span>4 CL</span></h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Bacardi Cl <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Havana Club 3 <span class="price">4,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Havana Club 7 <span class="price">5,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Don PaPa <span class="price">8,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Zacapa <span class="price">8,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
 
                 <div class="sub-category">
                     <h3>Whisky <span>4 CL</span></h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Jameson <span class="price">5,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Jack Daniel's <span class="price">6,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Chivas <span class="price">7,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Glendfiddich <span class="price">9,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
 
                 <div class="sub-category">
                     <h3>Grappa <span>2 CL</span></h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Chardonnay Nonino <span class="price">4,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
 
                 <div class="sub-category">
                     <h3>Vermouth <span>5 CL</span></h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Martini Bianco <span class="price">6,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Martini Rosso <span class="price">6,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Martini Extra Dry <span class="price">6,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
 
                 <div class="sub-category">
                     <h3>Vodka <span>4 CL</span></h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Grey Goose <span class="price">7,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Belvedere <span class="price">7,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Three Sixty <span class="price">4,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Smirnoff <span class="price">4,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
 
                 <div class="sub-category">
                     <h3>Tequila <span>2 CL</span></h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Silver <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Gold <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
 
                 <div class="sub-category">
                     <h3 data-i18n="brandyCognac">Brandy & Cognac <span>2 CL</span></h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Cardenal Mendoza <span class="price">10,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Remy Martin V.S.O.P <span class="price">12,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Hennessy Cognac <span class="price">10,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Hennessy X.O <span class="price">14,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
 
                 <div class="sub-category">
                     <h3 data-i18n="bitterLiqueur">Bitter & Liköre <span>2 CL</span></h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Campari <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Baileys <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Sambuca <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Averna <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Ramazzotti <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Frangelico <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Fernet Branca <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Licor 43 <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
 
                 <div class="sub-category">
                     <h3>Gin <span>4 CL</span></h3>
-                    <div class="menu-grid compact">
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Gordon's <span class="price">4,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Tanqueray <span class="price">6,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Hendricks <span class="price">6,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Monkey 47 <span class="price">8,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                        <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Illusionist <span class="price">10,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    </div>
+                    <div class="menu-grid compact"></div>
                 </div>
             </article>
-
 
             <article id="hot" class="menu-section" data-section="hot">
                 <div class="section-heading">
                     <h2 data-i18n="catHot">Hot drinks</h2>
                 </div>
-                <div class="menu-grid compact">
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Espresso / Espresso doppelt <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Espresso Macchiato <span class="price">2,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Kaffee Creme <span class="price">3,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Cappuccino <span class="price">4,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Latte Macchiato / Milchkaffee <span class="price">4,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Heiße Schokolade <span class="price">4,90 €</span></h3>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-content">
-                            <h3>Teesorten <span class="price">3,90 €</span></h3>
-                        <p data-i18n="teaNote">Fresh tea with mint, ginger, lemon</p>
-                        </div>
-                        <img src="" alt="" class="menu-card-img">
-                    </div>
-                </div>
+                <div class="menu-grid compact"></div>
             </article>
-
-
         </section>
     </main>
 
@@ -1288,13 +268,20 @@
             <p data-i18n="footerHoursSunday">Sonntag: 12:00 - 22:00</p>
         </div>
 
-
         <div class="footer-column">
             <h3 data-i18n="footerContactTitle">Kontakt</h3>
-            <p><span data-i18n="footerPhone">Telefon:</span> <a href="tel:01745673456">01745673456</a></p>
-            <p><span data-i18n="footerEmail">E-Mail:</span> <a href="mailto:info@hertzecke.de">info@hertzecke.de</a></p>
-            <p><span data-i18n="footerAddress">Adresse:</span> <span
-                    data-i18n="footerAddressValue">Heinrich-Hertz-Straße 102</span></p>
+            <p>
+                <span data-i18n="footerPhone">Telefon:</span>
+                <a href="tel:01745673456">01745673456</a>
+            </p>
+            <p>
+                <span data-i18n="footerEmail">E-Mail:</span>
+                <a href="mailto:info@hertzecke.de">info@hertzecke.de</a>
+            </p>
+            <p>
+                <span data-i18n="footerAddress">Adresse:</span>
+                <span data-i18n="footerAddressValue">Heinrich-Hertz-Straße 102</span>
+            </p>
         </div>
 
         <div class="footer-column">
@@ -1306,6 +293,7 @@
         </div>
     </footer>
 
+    <script src="../Checkout/cartLogic.js"></script>
     <script src="DrinksMenu.js"></script>
 </body>
 
