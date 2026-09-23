@@ -734,3 +734,9 @@ a {
         padding-bottom: 28px;
     }
 }
+.section-note {
+    margin: -12px 0 18px;
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-style: italic;
+}
