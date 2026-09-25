@@ -43,9 +43,8 @@ const translations = {
         teaNote: 'Fresh tea with mint, ginger, lemon...',
 
         footerHoursTitle: 'Working hours',
-        footerHoursWeek: 'Monday - Thursday: 11:00 - 22:00',
-        footerHoursWeekend: 'Friday - Saturday: 11:00 - 02:00',
-        footerHoursSunday: 'Sunday: 12:00 - 22:00',
+        footerHoursWeek: 'Monday - Thursday: 12:00 - 23:00',
+        footerHoursWeekend: 'Friday - Saturday: Open end',
         footerContactTitle: 'Contact',
         footerPhone: 'Phone:',
         footerEmail: 'E-Mail:',
@@ -62,7 +61,7 @@ const translations = {
         navEvents: 'Veranstaltungen',
         navContact: 'Kontakt',
         navImpressum: 'Impressum',
-        
+
         menuEyebrow: 'Speisekarte von Hertz Ecke',
         menuHeroTitle: 'Gute Getränke. Gutes Essen. Gute Stimmung.',
         menuHeroText: 'Entdecken Sie unsere Getränke nach Kategorien und springen Sie direkt zum gewünschten Bereich.',
@@ -104,9 +103,8 @@ const translations = {
         teaNote: 'Frischer Tee mit Minze, Ingwer, Zitrone...',
 
         footerHoursTitle: 'Öffnungszeiten',
-        footerHoursWeek: 'Montag – Donnerstag: 11:00 – 22:00',
-        footerHoursWeekend: 'Freitag – Samstag: 11:00 – 02:00',
-        footerHoursSunday: 'Sonntag: 12:00 – 22:00',
+        footerHoursWeek: 'Sonntag – Donnerstag: 12:00 – 23:00',
+        footerHoursWeekend: 'Freitag – Samstag: Offenes Ende',
 
         footerContactTitle: 'Kontakt',
         footerPhone: 'Telefon:',

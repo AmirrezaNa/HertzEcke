@@ -27,9 +27,8 @@ const translations = {
         chickenBurgerNote: 'Served with French fries.',
 
         footerHoursTitle: 'Working hours',
-        footerHoursWeek: 'Monday - Thursday: 11:00 - 22:00',
-        footerHoursWeekend: 'Friday - Saturday: 11:00 - 02:00',
-        footerHoursSunday: 'Sunday: 12:00 - 22:00',
+        footerHoursWeek: 'Monday - Thursday: 12:00 - 23:00',
+        footerHoursWeekend: 'Friday - Saturday: Open end',
         footerContactTitle: 'Contact',
         footerPhone: 'Phone:',
         footerEmail: 'E-Mail:',
@@ -67,9 +66,8 @@ const translations = {
         chickenBurgerNote: 'Mit Pommes frites.',
 
         footerHoursTitle: 'Öffnungszeiten',
-        footerHoursWeek: 'Montag – Donnerstag: 11:00 – 22:00',
-        footerHoursWeekend: 'Freitag – Samstag: 11:00 – 02:00',
-        footerHoursSunday: 'Sonntag: 12:00 – 22:00',
+        footerHoursWeek: 'Sonntag – Donnerstag: 12:00 – 23:00',
+        footerHoursWeekend: 'Freitag – Samstag: Offenes Ende',
 
         footerContactTitle: 'Kontakt',
         footerPhone: 'Telefon:',
