@@ -5,6 +5,7 @@ const translations = {
         navFoodMenu: 'Food menu',
         navEvents: 'Events',
         navContact: 'Contact us',
+        navImpressum: 'Law Notice',
 
         menuEyebrow: 'Hertz Ecke menu',
         menuHeroTitle: 'Good drinks. Good food. Good vibes.',
@@ -60,7 +61,8 @@ const translations = {
         navFoodMenu: 'Speisemenü',
         navEvents: 'Veranstaltungen',
         navContact: 'Kontakt',
-
+        navImpressum: 'Impressum',
+        
         menuEyebrow: 'Speisekarte von Hertz Ecke',
         menuHeroTitle: 'Gute Getränke. Gutes Essen. Gute Stimmung.',
         menuHeroText: 'Entdecken Sie unsere Getränke nach Kategorien und springen Sie direkt zum gewünschten Bereich.',
