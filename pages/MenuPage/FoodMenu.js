@@ -5,12 +5,12 @@ const translations = {
         navFoodMenu: 'Food Menu',
         navEvents: 'Events',
         navContact: 'Contact us',
-        navImpressum: 'Law Notice',
 
         menuEyebrow: 'Hertz Ecke menu',
         menuHeroTitle: 'Good drinks. Good food. Good vibes.',
         menuHeroText: 'Explore our menu by category and jump smoothly to the section you want.',
         menuHeroButton: 'View categories',
+        menuHubLabel: 'Food Menu',
 
         catSides: 'Sides',
         catSnacks: 'Snacks & Starters',
@@ -27,8 +27,9 @@ const translations = {
         chickenBurgerNote: 'Served with French fries.',
 
         footerHoursTitle: 'Working hours',
-        footerHoursWeek: 'Monday - Thursday: 12:00 - 23:00',
-        footerHoursWeekend: 'Friday - Saturday: Open end',
+        footerHoursWeek: 'Monday - Thursday: 11:00 - 22:00',
+        footerHoursWeekend: 'Friday - Saturday: 11:00 - 02:00',
+        footerHoursSunday: 'Sunday: 12:00 - 22:00',
         footerContactTitle: 'Contact',
         footerPhone: 'Phone:',
         footerEmail: 'E-Mail:',
@@ -44,12 +45,12 @@ const translations = {
         navFoodMenu: 'Speisemenü',
         navEvents: 'Veranstaltungen',
         navContact: 'Kontakt',
-        navImpressum: 'Impressum',
 
         menuEyebrow: 'Speisekarte von Hertz Ecke',
         menuHeroTitle: 'Gute Getränke. Gutes Essen. Gute Stimmung.',
         menuHeroText: 'Entdecken Sie unsere Speisen nach Kategorien und springen Sie direkt zum gewünschten Bereich.',
         menuHeroButton: 'Kategorien ansehen',
+        menuHubLabel: 'Speisekarte',
 
         catSides: 'Sides',
         catSnacks: 'Snacks & Starter',
@@ -66,8 +67,9 @@ const translations = {
         chickenBurgerNote: 'Mit Pommes frites.',
 
         footerHoursTitle: 'Öffnungszeiten',
-        footerHoursWeek: 'Sonntag – Donnerstag: 12:00 – 23:00',
-        footerHoursWeekend: 'Freitag – Samstag: Offenes Ende',
+        footerHoursWeek: 'Montag – Donnerstag: 11:00 – 22:00',
+        footerHoursWeekend: 'Freitag – Samstag: 11:00 – 02:00',
+        footerHoursSunday: 'Sonntag: 12:00 – 22:00',
 
         footerContactTitle: 'Kontakt',
         footerPhone: 'Telefon:',
@@ -110,7 +112,7 @@ categoryButtons.forEach((button) => {
         const target = document.getElementById(button.dataset.target);
         if (!target) return;
 
-        const headerOffset = 170;
+        const headerOffset = 110;
         const elementPosition = target.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 

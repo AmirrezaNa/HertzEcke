@@ -23,7 +23,6 @@
                 <li><a href="../MenuPage/FoodMenu.html" data-i18n="navFoodMenu">Speisemenü</a></li>
                 <li><a href="../EventsPage/Events.html" data-i18n="navEvents">Events</a></li>
                 <li><a href="../ContactUsPage/ContactUs.html" data-i18n="navContact">Contact us</a></li>
-                <li><a href="../ImpressumPage/Impressum.html" data-i18n="navImpressum">Impressum</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -56,25 +55,29 @@
             </div>
         </section>
 
-        <section id="menuCategories" class="category-control" aria-label="Menu category controls">
-            <button class="category-button" type="button" data-target="soft" data-i18n="catSoft">Soft drinks</button>
+        <section id="menuCategories" class="category-control" aria-label="Menu category controls" style="--count: 12;">
+            <div class="category-hub" aria-hidden="true">
+                <img src="../../images/logo.jpg" alt="">
+                <span data-i18n="menuHubLabel">Getränke</span>
+            </div>
+            <button class="category-button" type="button" data-target="soft" data-i18n="catSoft" style="--i: 0;">Soft drinks</button>
             <button class="category-button" type="button" data-target="lemonades"
-                data-i18n="catLemonades">Lemonades</button>
-            <button class="category-button" type="button" data-target="icedtea" data-i18n="catIcedTea">Iced Tea</button>
+                data-i18n="catLemonades" style="--i: 1;">Lemonades</button>
+            <button class="category-button" type="button" data-target="icedtea" data-i18n="catIcedTea" style="--i: 2;">Iced Tea</button>
             <button class="category-button active" type="button" data-target="sparkling"
-                data-i18n="catSparkling">Sparkling & Aperitif</button>
-            <button class="category-button" type="button" data-target="wine" data-i18n="catWine">Wine</button>
-            <button class="category-button" type="button" data-target="beer" data-i18n="catBeer">Beer</button>
-            <button class="category-button" type="button" data-target="caribbean" data-i18n="catCaribbean">Caribbean &
+                data-i18n="catSparkling" style="--i: 3;">Sparkling & Aperitif</button>
+            <button class="category-button" type="button" data-target="wine" data-i18n="catWine" style="--i: 4;">Wine</button>
+            <button class="category-button" type="button" data-target="beer" data-i18n="catBeer" style="--i: 5;">Beer</button>
+            <button class="category-button" type="button" data-target="caribbean" data-i18n="catCaribbean" style="--i: 6;">Caribbean &
                 Fancy</button>
             <button class="category-button" type="button" data-target="modern"
-                data-i18n="catModern">ModernClassics</button>
-            <button class="category-button" type="button" data-target="sours" data-i18n="catSours">Sours &
+                data-i18n="catModern" style="--i: 7;">ModernClassics</button>
+            <button class="category-button" type="button" data-target="sours" data-i18n="catSours" style="--i: 8;">Sours &
                 Fizzes</button>
-            <button class="category-button" type="button" data-target="driver" data-i18n="catDriver">Alcohol-free
+            <button class="category-button" type="button" data-target="driver" data-i18n="catDriver" style="--i: 9;">Alcohol-free
                 cocktails</button>
-            <button class="category-button" type="button" data-target="spirits" data-i18n="catSpirits">Spirits</button>
-            <button class="category-button" type="button" data-target="hot" data-i18n="catHot">Hot drinks</button>
+            <button class="category-button" type="button" data-target="spirits" data-i18n="catSpirits" style="--i: 10;">Spirits</button>
+            <button class="category-button" type="button" data-target="hot" data-i18n="catHot" style="--i: 11;">Hot drinks</button>
         </section>
 
         <section class="menu-board" aria-label="Menu items">
@@ -1283,8 +1286,9 @@
     <footer class="site-footer">
         <div class="footer-column">
             <h3 data-i18n="footerHoursTitle">Öffnungszeiten</h3>
-            <p data-i18n="footerHoursWeek">Sonntag - Donnerstag: 12:00 - 23:00</p>
-            <p data-i18n="footerHoursWeekend">Freitag - Samstag: Offenes Ende</p>
+            <p data-i18n="footerHoursWeek">Montag - Donnerstag: 11:00 - 22:00</p>
+            <p data-i18n="footerHoursWeekend">Freitag - Samstag: 11:00 - 02:00</p>
+            <p data-i18n="footerHoursSunday">Sonntag: 12:00 - 22:00</p>
         </div>
 
 
